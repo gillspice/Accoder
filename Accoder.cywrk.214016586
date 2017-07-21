@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_midi.c">
+<ExpandedNodeIds>
+<v>Accoder</v>
+<v>Accoder\Accoder</v>
+<v>Accoder\Accoder\TopDesign</v>
+<v>Accoder\Accoder\Accoder.cydwr</v>
+<v>Accoder\Accoder\Accoder.cydwr\Pins</v>
+<v>Accoder\Accoder\Accoder.cydwr\Analog</v>
+<v>Accoder\Accoder\Accoder.cydwr\Clocks</v>
+<v>Accoder\Accoder\Accoder.cydwr\Interrupts</v>
+<v>Accoder\Accoder\Accoder.cydwr\DMA</v>
+<v>Accoder\Accoder\Accoder.cydwr\System</v>
+<v>Accoder\Accoder\Accoder.cydwr\Directives</v>
+<v>Accoder\Accoder\Accoder.cydwr\Flash Security</v>
+<v>Accoder\Accoder\Accoder.cydwr\EEPROM</v>
+<v>Accoder\Accoder\Header Files</v>
+<v>Accoder\Accoder\Header Files\cyapicallbacks.h</v>
+<v>Accoder\Accoder\Source Files</v>
+<v>Accoder\Accoder\Source Files\main.c</v>
+<v>Accoder\Accoder\Generated_Source</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\CLK</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\CLK\CLK.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\CLK\CLK.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\CLK\CLK_aliases.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_1</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_1\Control_Reg_1.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_1\Control_Reg_1.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_1\Control_Reg_1_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_10</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_10\Control_Reg_10.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_10\Control_Reg_10.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_10\Control_Reg_10_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_11</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_11\Control_Reg_11.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_11\Control_Reg_11.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_11\Control_Reg_11_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_12</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_12\Control_Reg_12.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_12\Control_Reg_12.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_12\Control_Reg_12_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_13</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_13\Control_Reg_13.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_13\Control_Reg_13.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_13\Control_Reg_13_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_14</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_14\Control_Reg_14.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_14\Control_Reg_14.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_14\Control_Reg_14_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_15</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_15\Control_Reg_15.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_15\Control_Reg_15.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_15\Control_Reg_15_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_16</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_16\Control_Reg_16.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_16\Control_Reg_16.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_16\Control_Reg_16_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_2</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_2\Control_Reg_2.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_2\Control_Reg_2.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_2\Control_Reg_2_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_3</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_3\Control_Reg_3.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_3\Control_Reg_3.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_3\Control_Reg_3_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_4</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_4\Control_Reg_4.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_4\Control_Reg_4.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_4\Control_Reg_4_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_5</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_5\Control_Reg_5.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_5\Control_Reg_5.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_5\Control_Reg_5_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_6</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_6\Control_Reg_6.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_6\Control_Reg_6.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_6\Control_Reg_6_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_7</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_7\Control_Reg_7.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_7\Control_Reg_7.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_7\Control_Reg_7_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_8</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_8\Control_Reg_8.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_8\Control_Reg_8.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_8\Control_Reg_8_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_9</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_9\Control_Reg_9.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_9\Control_Reg_9.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\Control_Reg_9\Control_Reg_9_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\DATA</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\DATA\DATA.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\DATA\DATA.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\DATA\DATA_aliases.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART_BOOT.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART_INT.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART_IntClock</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART_IntClock\MIDI1_UART_IntClock.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART_IntClock\MIDI1_UART_IntClock.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\SCLK</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\SCLK\SCLK.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\SCLK\SCLK.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\TE</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\TE\TE.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\TE\TE.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\TE\TE_aliases.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_audio.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_audio.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_boot.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cdc.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cdc.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cdc.inf</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cls.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cydmac.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_descr.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_drv.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_episr.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_hid.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_hid.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_midi.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_midi.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_msc.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_msc.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_pm.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_pvt.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_std.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_vnd.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1_Dm</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1_Dm\USBMIDI_1_Dm.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1_Dm\USBMIDI_1_Dm.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1_Dm\USBMIDI_1_Dm_aliases.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1_Dp</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1_Dp\USBMIDI_1_Dp.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1_Dp\USBMIDI_1_Dp.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1_Dp\USBMIDI_1_Dp_aliases.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cydevice.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cyfitter.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cymetadata.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\project.h</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\DATA</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\DATA\DATA.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\DATA\DATA.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\DATA\DATA_aliases.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART_BOOT.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART_INT.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART\MIDI1_UART_PM.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART_IntClock</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART_IntClock\MIDI1_UART_IntClock.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\MIDI1_UART_IntClock\MIDI1_UART_IntClock.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\SCLK</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\SCLK\SCLK.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\SCLK\SCLK.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\TE</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\TE\TE.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\TE\TE.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\TE\TE_aliases.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_audio.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_audio.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_boot.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cdc.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cdc.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cdc.inf</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cls.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_cydmac.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_descr.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_drv.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_episr.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_hid.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_hid.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_midi.c</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_midi.h</v>
+<v>Accoder\Accoder\Generated_Source\PSoC5\USBMIDI_1\USBMIDI_1_msc.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Accoder</v>
+<v>Accoder\Accoder</v>
+<v>Accoder\Accoder\TopDesign</v>
+<v>Accoder\Accoder\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Accoder</v>
+<v>Accoder\Accoder</v>
+<v>Accoder\Accoder\TopDesign</v>
+<v>Accoder\Accoder\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Accoder</v>
+<v>Accoder\Accoder</v>
+<v>Accoder\Accoder\CortexM3</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CLK.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_1.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_1_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_10.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_10_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_11.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_11_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_12.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_12_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_13.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_13_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_14.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_14_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_15.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_15_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_16.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_16_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_2.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_2_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_3.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_3_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_4.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_4_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_5.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_5_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_6.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_6_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_7.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_7_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_8.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_8_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_9.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_9_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\DATA.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\MIDI1_UART.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\MIDI1_UART_BOOT.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\MIDI1_UART_INT.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\MIDI1_UART_IntClock.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\MIDI1_UART_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\SCLK.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\TE.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_audio.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_boot.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_cdc.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_cls.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_descr.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_Dm.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_Dp.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_drv.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_episr.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_hid.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_midi.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_msc.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_pm.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_std.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\USBMIDI_1_vnd.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Accoder.elf</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Accoder.hex</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Accoder.map</v>
+<v>Accoder\Accoder\Accoder.gpdsc</v>
+<v>Accoder\Accoder\Accoder.rpt</v>
+<v>Accoder\Accoder\Accoder_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Accoder</v>
+<v>Accoder\Accoder</v>
+<v>Accoder\Accoder\CortexM3</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CLK.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_1.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_1_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_10.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_10_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_11.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_11_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_12.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_12_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_13.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_13_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_14.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_14_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_15.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_15_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_16.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_16_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_2.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_2_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_3.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_3_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_4.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_4_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_5.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_5_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_6.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_6_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_7.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_7_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_8.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_8_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_9.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\Control_Reg_9_PM.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>Accoder\Accoder\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Accoder</v>
+<v>Accoder\Accoder</v>
+<v>Accoder\Accoder\PSoC 5LP Architecture TRM</v>
+<v>Accoder\Accoder\CY8C58LP Family Datasheet</v>
+<v>Accoder\Accoder\System Reference Guides</v>
+<v>Accoder\Accoder\System Reference Guides\cy_boot_v5_50</v>
+<v>Accoder\Accoder\and_v1_0.pdf</v>
+<v>Accoder\Accoder\BasicCounter_v1_0.pdf</v>
+<v>Accoder\Accoder\cy_clock_v2_20.pdf</v>
+<v>Accoder\Accoder\cy_constant_v1_0.pdf</v>
+<v>Accoder\Accoder\cy_pins_v2_20</v>
+<v>Accoder\Accoder\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Accoder\Accoder\CyControlReg_v1_80</v>
+<v>Accoder\Accoder\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>Accoder\Accoder\mux_v1_10</v>
+<v>Accoder\Accoder\mux_v1_10\mux_v1_10.pdf</v>
+<v>Accoder\Accoder\not_v1_0</v>
+<v>Accoder\Accoder\not_v1_0\not_v1_0.pdf</v>
+<v>Accoder\Accoder\OneTerminal.pdf</v>
+<v>Accoder\Accoder\UART_v2_50.pdf</v>
+<v>Accoder\Accoder\USBFS_v3_10.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Accoder</v>
+<v>Accoder\Accoder</v>
+<v>Accoder\Accoder\PSoC 5LP Architecture TRM</v>
+<v>Accoder\Accoder\CY8C58LP Family Datasheet</v>
+<v>Accoder\Accoder\System Reference Guides</v>
+<v>Accoder\Accoder\System Reference Guides\cy_boot_v5_50</v>
+<v>Accoder\Accoder\and_v1_0.pdf</v>
+<v>Accoder\Accoder\BasicCounter_v1_0.pdf</v>
+<v>Accoder\Accoder\cy_clock_v2_20.pdf</v>
+<v>Accoder\Accoder\cy_constant_v1_0.pdf</v>
+<v>Accoder\Accoder\cy_pins_v2_20</v>
+<v>Accoder\Accoder\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Accoder\Accoder\CyControlReg_v1_80</v>
+<v>Accoder\Accoder\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>Accoder\Accoder\mux_v1_10</v>
+<v>Accoder\Accoder\mux_v1_10\mux_v1_10.pdf</v>
+<v>Accoder\Accoder\not_v1_0</v>
+<v>Accoder\Accoder\not_v1_0\not_v1_0.pdf</v>
+<v>Accoder\Accoder\OneTerminal.pdf</v>
+<v>Accoder\Accoder\UART_v2_50.pdf</v>
+<v>Accoder\Accoder\USBFS_v3_10.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs />
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
