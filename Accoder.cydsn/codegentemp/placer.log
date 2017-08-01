@@ -6,7 +6,7 @@
 
 #Build Date:         Apr 29 2016 09:00:55
 
-#File Generated:     Jul 21 2017 11:30:33
+#File Generated:     Jul 21 2017 17:51:06
 
 #Purpose:            
 
@@ -80,12 +80,12 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 8
-Clock: CyBUS_CLK            | Frequency:  47.5 MHz | Target:  24.0 MHz
+Clock: CyBUS_CLK            | Frequency:  44.1 MHz | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
-Clock: MIDI1_UART_IntClock  | Frequency:  42.5 MHz | Target:   0.3 MHz
+Clock: MIDI1_UART_IntClock  | Frequency:  44.1 MHz | Target:   0.3 MHz
 Clock: SCLK                 | Frequency: 102.5 MHz | Target:   0.0 MHz
 Clock: SCLK(routed)         | Frequency: N/A       | Target:   0.0 MHz
 
@@ -93,7 +93,7 @@ Clock: SCLK(routed)         | Frequency: N/A       | Target:   0.0 MHz
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.3 (sec)
+D2088: Phase 6, elapsed time : 0.1 (sec)
 
 Phase 7
 ######################################################################
@@ -106,13 +106,13 @@ Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
 Clock: MIDI1_UART_IntClock  | Frequency:   1.2 MHz | Target:   0.3 MHz
-Clock: SCLK                 | Frequency: 102.5 MHz | Target:   0.0 MHz
+Clock: SCLK                 | Frequency: 108.6 MHz | Target:   0.0 MHz
 Clock: SCLK(routed)         | Frequency: N/A       | Target:   0.0 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 5.7 (sec)
+D2088: Phase 7, elapsed time : 0.9 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	39
@@ -149,7 +149,7 @@ Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
 Clock: MIDI1_UART_IntClock  | Frequency:   1.2 MHz | Target:   0.3 MHz
-Clock: SCLK                 | Frequency: 102.5 MHz | Target:   0.0 MHz
+Clock: SCLK                 | Frequency: 108.6 MHz | Target:   0.0 MHz
 Clock: SCLK(routed)         | Frequency: N/A       | Target:   0.0 MHz
 
 ======================================================================
@@ -183,7 +183,7 @@ Clock: SCLK(routed)         | Frequency: N/A       | Target:   0.0 MHz
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.4 (sec)
+D2088: Phase 6, elapsed time : 0.1 (sec)
 
 Phase 7
 ######################################################################
@@ -196,13 +196,13 @@ Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
 Clock: MIDI1_UART_IntClock  | Frequency:   1.2 MHz | Target:   0.3 MHz
-Clock: SCLK                 | Frequency: 102.5 MHz | Target:   0.0 MHz
+Clock: SCLK                 | Frequency: 115.5 MHz | Target:   0.0 MHz
 Clock: SCLK(routed)         | Frequency: N/A       | Target:   0.0 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 8.0 (sec)
+D2088: Phase 7, elapsed time : 1.8 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	39
@@ -239,7 +239,7 @@ Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
 Clock: MIDI1_UART_IntClock  | Frequency:   1.2 MHz | Target:   0.3 MHz
-Clock: SCLK                 | Frequency:  57.2 MHz | Target:   0.0 MHz
+Clock: SCLK                 | Frequency:  58.1 MHz | Target:   0.0 MHz
 Clock: SCLK(routed)         | Frequency: N/A       | Target:   0.0 MHz
 
 ======================================================================
@@ -251,5 +251,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 17.9 sec.
+I2076: Total run-time: 3.9 sec.
 

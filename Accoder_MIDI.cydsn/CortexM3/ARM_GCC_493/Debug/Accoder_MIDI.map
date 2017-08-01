@@ -1,0 +1,2295 @@
+Archive member included because of file (symbol)
+
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o (cyfitter_cfg)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (SW2_Read)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (SleepTimer_Start)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (SW1_Read)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (MIDI_PWR_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (LED_OutB_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (LED_InB_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (LED_OutA_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (LED_InA_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (MIDI1_UART_Sleep)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (MIDI2_UART_Sleep)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (USB_Start)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o) (USB_EP)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o) (USB_EP_1_ISR)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o) (USB_DP_ISR)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o) (USB_HandleStandardRqst)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o) (USB_HandleVendorRqst)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o) (USB_midi_in_ep)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Sleep_isr_StartEx)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o) (USB_Dp_ClearInterrupt)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o (CyResetStatus)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (CyPmSaveClocks)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Keys_Notes_1_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Keys_Notes_2_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Keys_Notes_3_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Keys_Notes_4_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Keys_Notes_5_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Keys_Notes_6_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Chords_Notes_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Chords_Bass_Notes_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Bass_Notes_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Chorus_Speed_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Tabs_1_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Tabs_2_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Tabs_3_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+                              .\CortexM3\ARM_GCC_493\Debug\main.o (Tabs_4_Write)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyBootAsmGnu.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o) (CyDelayCycles)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o) (MIDI1_UART_rxBuffer)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o) (MIDI1_UART_RXISR)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o) (MIDI2_UART_rxBuffer)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o) (MIDI2_UART_RXISR)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o) (USB_DispatchClassRqst)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o) (USB_DEVICE0_DESCR)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o) (CyFlash_SetWaitCycles)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o) (CySpcStart)
+.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o) (USB_DispatchAUDIOClassRqst)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o) (memcpy)
+c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+USB_transferState   0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_interfaceNumber
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_midiOutBuffer   0x20              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+USB_lastPacketSize  0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_interfaceClass  0x4               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_interfaceSetting
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_MIDI1_InqFlags  0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+USB_ep0Mode         0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_device          0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_midi_in_ep      0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+USB_deviceAddress   0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_ep0Toggle       0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_midiInPointer   0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+MIDI2_UART_rxBuffer
+                    0xff              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+MIDI1_UART_txBuffer
+                    0xff              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+USB_interfaceSettingLast
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_configurationChanged
+                    0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_MIDI2_InqFlags  0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+USB_midi_out_ep     0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+USB_interfaceStatus
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_midiInBuffer    0x20              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+USB_transferByteCount
+                    0x2               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_configuration   0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_idSerialNumberStringDescriptor
+                    0x22              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+USB_currentTD       0xc               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_ep0Count        0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+USB_deviceStatus    0x1               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+MIDI1_UART_rxBuffer
+                    0xff              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+dieTemperature      0x2               .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+MIDI2_UART_txBuffer
+                    0xff              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+USB_EP              0x6c              .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .text          0x00000000       0x74 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .data          0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .text._exit    0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .text._sbrk    0x00000000       0x50 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPYCODE
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .text.SetAnalogRoutingPumps
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .text.SW2_Write
+                0x00000000       0x3c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .text.SW2_SetDriveMode
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .text.SW2_ReadDataReg
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .text.SleepTimer_DisableInt
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .text.SW1_Write
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .text.SW1_SetDriveMode
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .text.SW1_ReadDataReg
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .text.MIDI_PWR_SetDriveMode
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .text.MIDI_PWR_Read
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .text.MIDI_PWR_ReadDataReg
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .text.LED_OutB_SetDriveMode
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .text.LED_OutB_Read
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .text.LED_OutB_ReadDataReg
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .text.LED_InB_SetDriveMode
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .text.LED_InB_Read
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .text.LED_InB_ReadDataReg
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .text.LED_OutA_SetDriveMode
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .text.LED_OutA_Read
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .text.LED_OutA_ReadDataReg
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .text.LED_InA_SetDriveMode
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .text.LED_InA_Read
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .text.LED_InA_ReadDataReg
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_Stop
+                0x00000000      0x104 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_GetInterfaceSetting
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_DisableOutEP
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_Force
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_GetEPAckState
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_SetPowerStatus
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_RWUEnabled
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_GetDeviceAddress
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_EnableSofInt
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text.USB_DisableSofInt
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .text.USB_InitControlWrite
+                0x00000000       0x64 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .text.USB_SaveConfig
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .text.USB_TerminateEP
+                0x00000000       0xb4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .text.Sleep_isr_Start
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .text.Sleep_isr_Stop
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .text.Sleep_isr_Interrupt
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .text.Sleep_isr_GetVector
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .text.Sleep_isr_GetPriority
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .text.Sleep_isr_GetState
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .text.Sleep_isr_SetPending
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .text.Sleep_isr_ClearPending
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .text.USB_Dp_Write
+                0x00000000       0x3c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .text.USB_Dp_SetDriveMode
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .text.USB_Dp_Read
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .text.USB_Dp_ReadDataReg
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .text.USB_Dp_SetInterruptMode
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .bss           0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyPLL_OUT_SetPQ
+                0x00000000       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyPLL_OUT_SetSource
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyUsbClk_SetSource
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyILO_Start1K
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyILO_Stop1K
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyILO_Enable33K
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyILO_Disable33K
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyILO_SetSource
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyILO_SetPowerMode
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Start
+                0x00000000       0x84 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Stop
+                0x00000000       0x50 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x00000000       0xb4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_EnableErrStatus
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_DisableErrStatus
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_ReadStatus
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_EnableFaultRecovery
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_DisableFaultRecovery
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_SetStartup
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_SetFbVoltage
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyXTAL_SetWdVoltage
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyDelay  0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x7c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyWdtStart
+                0x00000000       0x8c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyWdtClear
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyVdLvDigitEnable
+                0x00000000       0xcc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyVdLvAnalogEnable
+                0x00000000       0xc8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyVdLvDigitDisable
+                0x00000000       0x48 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyVdLvAnalogDisable
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyVdHvAnalogEnable
+                0x00000000       0x78 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyVdHvAnalogDisable
+                0x00000000       0x2c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyVdStickyStatus
+                0x00000000       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyVdRealTimeStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyFlushCache
+                0x00000000       0x58 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x4c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickGetClockSource
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmAltAct
+                0x00000000       0xb8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmHibernate
+                0x00000000        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmHibernateEx
+                0x00000000      0x158 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmHibSaveSet
+                0x00000000       0xd4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmHibRestore
+                0x00000000       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmCtwSetInterval
+                0x00000000       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmOppsSet
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmHviLviSaveDisable
+                0x00000000       0xd4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmHviLviRestore
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .text.Chords_Notes_Read
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .text.Chords_Bass_Notes_Read
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .text.Bass_Notes_Read
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .text.Chorus_Speed_Read
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_ReadControlRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_WriteControlRegister
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_SetRxInterruptMode
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_ReadRxData
+                0x00000000       0x94 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_ReadRxStatus
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_GetChar
+                0x00000000       0xb8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_GetByte
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_GetRxBufferSize
+                0x00000000       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_SetRxAddressMode
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_SetRxAddress1
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_SetRxAddress2
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_SetTxInterruptMode
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_WriteTxData
+                0x00000000       0x94 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_ReadTxStatus
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_PutString
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_PutArray
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_PutCRLF
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_GetTxBufferSize
+                0x00000000       0x74 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_SendBreak
+                0x00000000       0x9c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text.MIDI1_UART_SetTxAddressMode
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_ReadControlRegister
+                0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_WriteControlRegister
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_SetRxInterruptMode
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_ReadRxData
+                0x00000000       0x94 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_ReadRxStatus
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_GetChar
+                0x00000000       0xb8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_GetByte
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_GetRxBufferSize
+                0x00000000       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_SetRxAddressMode
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_SetRxAddress1
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_SetRxAddress2
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_SetTxInterruptMode
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_WriteTxData
+                0x00000000       0x94 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_ReadTxStatus
+                0x00000000       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_PutString
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_PutArray
+                0x00000000       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_PutCRLF
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_GetTxBufferSize
+                0x00000000       0x74 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_SendBreak
+                0x00000000       0x9c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text.MIDI2_UART_SetTxAddressMode
+                0x00000000       0x14 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .bss           0x00000000        0x4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CyFlash_Start
+                0x00000000       0x8c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CyFlash_Stop
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CySetTempInt
+                0x00000000       0x7c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CyFlashGetSpcAlgorithm
+                0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CySetTemp
+                0x00000000       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CySetFlashEEBuffer
+                0x00000000       0x54 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CyWriteRowData
+                0x00000000       0x3c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CyWriteRowFull
+                0x00000000      0x158 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CyEEPROM_Start
+                0x00000000       0x8c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CyEEPROM_Stop
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CyEEPROM_ReadReserve
+                0x00000000       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text.CyEEPROM_ReadRelease
+                0x00000000       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ COMMON         0x00000000        0x2 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .bss           0x00000000        0x8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcStart
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcStop
+                0x00000000       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcReadData
+                0x00000000       0x58 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcLoadMultiByte
+                0x00000000       0xd4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcLoadRow
+                0x00000000       0x8c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcLoadRowFull
+                0x00000000       0xd0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcWriteRow
+                0x00000000       0x98 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcEraseSector
+                0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcGetTemp
+                0x00000000       0x64 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcLock
+                0x00000000       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcUnlock
+                0x00000000       0x50 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text.CySpcGetAlgorithm
+                0x00000000       0x48 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x1fff8000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+START GROUP
+LOAD .\CortexM3\ARM_GCC_493\Debug\main.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+LOAD .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000020                CY_ECC_ROW_SIZE = 0x20
+                0x00000000                CY_EE_IN_BTLDR = 0x0
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000800                CY_EE_SIZE = 0x800
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                0x1fff8730                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x10000))
+                0x20007800                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((0x40000 - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                ecc_offset = ((appl_start / CY_FLASH_ROW_SIZE) * CY_ECC_ROW_SIZE)
+                0x00000000                ee_offset = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?((CY_EE_SIZE / CY_APPL_MAX) * (CY_APPL_NUM - 0x1)):0x0
+                0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
+                0x00000000                PROVIDE (CY_ECC_OFFSET, ecc_offset)
+
+.text           0x00000000     0x61da
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010       0x18 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.dma_init)
+                0x00000001                ASSERT ((((appl_start + .) <= 0x10000) || 0x1), DMA Init must be within the first 64k of flash)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000028       0x5c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .text.SleepIsr
+                0x00000084       0x30 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x00000084                SleepIsr
+ .text.main     0x000000b4      0x238 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000000b4                main
+ .text.USB_callbackLocalMidiEvent
+                0x000002ec      0x5c8 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000002ec                USB_callbackLocalMidiEvent
+ .text.USB_MIDI1_ProcessUsbOut_EntryCallback
+                0x000008b4        0xc .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000008b4                USB_MIDI1_ProcessUsbOut_EntryCallback
+ .text.USB_MIDI1_ProcessUsbOut_ExitCallback
+                0x000008c0        0xc .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000008c0                USB_MIDI1_ProcessUsbOut_ExitCallback
+ .text.USB_MIDI2_ProcessUsbOut_EntryCallback
+                0x000008cc        0xc .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000008cc                USB_MIDI2_ProcessUsbOut_EntryCallback
+ .text.USB_MIDI2_ProcessUsbOut_ExitCallback
+                0x000008d8        0xc .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000008d8                USB_MIDI2_ProcessUsbOut_ExitCallback
+ .text.MIDI1_UART_RXISR_EntryCallback
+                0x000008e4        0xc .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000008e4                MIDI1_UART_RXISR_EntryCallback
+ .text.MIDI1_UART_RXISR_ExitCallback
+                0x000008f0        0xc .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000008f0                MIDI1_UART_RXISR_ExitCallback
+ .text.MIDI2_UART_RXISR_EntryCallback
+                0x000008fc        0xc .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000008fc                MIDI2_UART_RXISR_EntryCallback
+ .text.MIDI2_UART_RXISR_ExitCallback
+                0x00000908        0xc .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x00000908                MIDI2_UART_RXISR_ExitCallback
+ .text.IntDefaultHandler
+                0x00000914       0x14 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000914                IntDefaultHandler
+ .text.Start_c  0x00000928       0x98 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00000928                Start_c
+ .text.initialize_psoc
+                0x000009c0       0x8c .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x000009c0                initialize_psoc
+ .text.CYMEMZERO
+                0x00000a4c       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPY
+                0x00000a68       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .text.CyClockStartupError
+                0x00000a84        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .text.cfg_write_bytes32
+                0x00000a90       0x74 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .text.ClockSetup
+                0x00000b04      0x118 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .text.AnalogSetDefault
+                0x00000c1c       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .text.cyfitter_cfg
+                0x00000c60      0x184 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+                0x00000c60                cyfitter_cfg
+ .text.SW2_Read
+                0x00000de4       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+                0x00000de4                SW2_Read
+ .text.SleepTimer_Start
+                0x00000e04       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                0x00000e04                SleepTimer_Start
+ .text.SleepTimer_Init
+                0x00000e24       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                0x00000e24                SleepTimer_Init
+ .text.SleepTimer_Enable
+                0x00000e34       0x74 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                0x00000e34                SleepTimer_Enable
+ .text.SleepTimer_Stop
+                0x00000ea8       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                0x00000ea8                SleepTimer_Stop
+ .text.SleepTimer_EnableInt
+                0x00000ed8       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                0x00000ed8                SleepTimer_EnableInt
+ .text.SleepTimer_SetInterval
+                0x00000f08       0x48 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                0x00000f08                SleepTimer_SetInterval
+ .text.SleepTimer_GetStatus
+                0x00000f50       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                0x00000f50                SleepTimer_GetStatus
+ .text.SW1_Read
+                0x00000f60       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+                0x00000f60                SW1_Read
+ .text.MIDI_PWR_Write
+                0x00000f80       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+                0x00000f80                MIDI_PWR_Write
+ .text.LED_OutB_Write
+                0x00000fb4       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+                0x00000fb4                LED_OutB_Write
+ .text.LED_InB_Write
+                0x00000fe8       0x3c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+                0x00000fe8                LED_InB_Write
+ .text.LED_OutA_Write
+                0x00001024       0x3c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+                0x00001024                LED_OutA_Write
+ .text.LED_InA_Write
+                0x00001060       0x3c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+                0x00001060                LED_InA_Write
+ .text.MIDI1_UART_SaveConfig
+                0x0000109c        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+                0x0000109c                MIDI1_UART_SaveConfig
+ .text.MIDI1_UART_RestoreConfig
+                0x000010a8        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+                0x000010a8                MIDI1_UART_RestoreConfig
+ .text.MIDI1_UART_Sleep
+                0x000010b4       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+                0x000010b4                MIDI1_UART_Sleep
+ .text.MIDI1_UART_Wakeup
+                0x000010e8       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+                0x000010e8                MIDI1_UART_Wakeup
+ .text.MIDI2_UART_SaveConfig
+                0x0000110c        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+                0x0000110c                MIDI2_UART_SaveConfig
+ .text.MIDI2_UART_RestoreConfig
+                0x00001118        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+                0x00001118                MIDI2_UART_RestoreConfig
+ .text.MIDI2_UART_Sleep
+                0x00001124       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+                0x00001124                MIDI2_UART_Sleep
+ .text.MIDI2_UART_Wakeup
+                0x00001158       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+                0x00001158                MIDI2_UART_Wakeup
+ .text.USB_Start
+                0x0000117c       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x0000117c                USB_Start
+ .text.USB_Init
+                0x000011b4      0x18c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x000011b4                USB_Init
+ .text.USB_InitComponent
+                0x00001340       0xf8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x00001340                USB_InitComponent
+ .text.USB_ReInitComponent
+                0x00001438       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x00001438                USB_ReInitComponent
+ .text.USB_CheckActivity
+                0x000014a0       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x000014a0                USB_CheckActivity
+ .text.USB_GetConfiguration
+                0x000014d8       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x000014d8                USB_GetConfiguration
+ .text.USB_IsConfigurationChanged
+                0x000014f0       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x000014f0                USB_IsConfigurationChanged
+ .text.USB_GetEPState
+                0x00001524       0x2c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x00001524                USB_GetEPState
+ .text.USB_GetEPCount
+                0x00001550       0x60 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x00001550                USB_GetEPCount
+ .text.USB_LoadInEP
+                0x000015b0       0xf8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x000015b0                USB_LoadInEP
+ .text.USB_ReadOutEP
+                0x000016a8       0x8c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x000016a8                USB_ReadOutEP
+ .text.USB_EnableOutEP
+                0x00001734       0x54 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x00001734                USB_EnableOutEP
+ .text.USB_EP_0_ISR
+                0x00001788       0xf8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001788                USB_EP_0_ISR
+ .text.USB_HandleSetup
+                0x00001880       0x88 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001880                USB_HandleSetup
+ .text.USB_HandleIN
+                0x00001908       0x4c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001908                USB_HandleIN
+ .text.USB_HandleOUT
+                0x00001954       0x58 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001954                USB_HandleOUT
+ .text.USB_LoadEP0
+                0x000019ac       0xd0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x000019ac                USB_LoadEP0
+ .text.USB_InitControlRead
+                0x00001a7c       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001a7c                USB_InitControlRead
+ .text.USB_InitZeroLengthControlTransfer
+                0x00001aec       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001aec                USB_InitZeroLengthControlTransfer
+ .text.USB_ControlReadDataStage
+                0x00001b30        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001b30                USB_ControlReadDataStage
+ .text.USB_ControlReadStatusStage
+                0x00001b3c       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001b3c                USB_ControlReadStatusStage
+ .text.USB_ControlWriteDataStage
+                0x00001b7c       0xb4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001b7c                USB_ControlWriteDataStage
+ .text.USB_ControlWriteStatusStage
+                0x00001c30       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001c30                USB_ControlWriteStatusStage
+ .text.USB_InitNoDataControlTransfer
+                0x00001c50       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001c50                USB_InitNoDataControlTransfer
+ .text.USB_NoDataControlStatusStage
+                0x00001c88       0x48 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001c88                USB_NoDataControlStatusStage
+ .text.USB_UpdateStatusBlock
+                0x00001cd0       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001cd0                USB_UpdateStatusBlock
+ .text.USB_InitializeStatusBlock
+                0x00001d10       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x00001d10                USB_InitializeStatusBlock
+ .text.USB_EP_1_ISR
+                0x00001d44       0x48 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+                0x00001d44                USB_EP_1_ISR
+ .text.USB_EP_2_ISR
+                0x00001d8c       0x4c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+                0x00001d8c                USB_EP_2_ISR
+ .text.USB_SOF_ISR
+                0x00001dd8        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+                0x00001dd8                USB_SOF_ISR
+ .text.USB_BUS_RESET_ISR
+                0x00001de4        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+                0x00001de4                USB_BUS_RESET_ISR
+ .text.USB_DP_ISR
+                0x00001df0        0xc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+                0x00001df0                USB_DP_ISR
+ .text.USB_RestoreConfig
+                0x00001dfc       0x1c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+                0x00001dfc                USB_RestoreConfig
+ .text.USB_Suspend
+                0x00001e18      0x11c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+                0x00001e18                USB_Suspend
+ .text.USB_Resume
+                0x00001f34      0x100 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+                0x00001f34                USB_Resume
+ .text.USB_HandleStandardRqst
+                0x00002034      0x48c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002034                USB_HandleStandardRqst
+ .text.USB_ReadDieID
+                0x000024c0       0xd4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x000024c0                USB_ReadDieID
+ .text.USB_ConfigReg
+                0x00002594      0x11c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002594                USB_ConfigReg
+ .text.USB_EpStateInit
+                0x000026b0       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x000026b0                USB_EpStateInit
+ .text.USB_Config
+                0x00002718      0x34c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002718                USB_Config
+ .text.USB_ConfigAltChanged
+                0x00002a64      0x23c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002a64                USB_ConfigAltChanged
+ .text.USB_GetConfigTablePtr
+                0x00002ca0       0x54 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002ca0                USB_GetConfigTablePtr
+ .text.USB_GetDeviceTablePtr
+                0x00002cf4       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002cf4                USB_GetDeviceTablePtr
+ .text.USB_GetInterfaceClassTablePtr
+                0x00002d18       0x4c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002d18                USB_GetInterfaceClassTablePtr
+ .text.USB_SetEndpointHalt
+                0x00002d64       0xdc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002d64                USB_SetEndpointHalt
+ .text.USB_ClearEndpointHalt
+                0x00002e40      0x130 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002e40                USB_ClearEndpointHalt
+ .text.USB_ValidateAlternateSetting
+                0x00002f70       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                0x00002f70                USB_ValidateAlternateSetting
+ .text.USB_HandleVendorRqst
+                0x00002fe0       0x54 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+                0x00002fe0                USB_HandleVendorRqst
+ .text.USB_MIDI_Init
+                0x00003034       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x00003034                USB_MIDI_Init
+ .text.USB_MIDI_OUT_Service
+                0x00003058       0xc8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x00003058                USB_MIDI_OUT_Service
+ .text.USB_MIDI_IN_EP_Service
+                0x00003120       0x4c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x00003120                USB_MIDI_IN_EP_Service
+ .text.USB_MIDI_IN_Service
+                0x0000316c       0xa0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x0000316c                USB_MIDI_IN_Service
+ .text.USB_PutUsbMidiIn
+                0x0000320c      0x154 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x0000320c                USB_PutUsbMidiIn
+ .text.USB_PrepareInBuffer
+                0x00003360      0x380 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x00003360                USB_PrepareInBuffer
+ .text.USB_MIDI_InitInterface
+                0x000036e0       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x000036e0                USB_MIDI_InitInterface
+ .text.USB_ProcessMidiIn
+                0x00003770      0x268 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x00003770                USB_ProcessMidiIn
+ .text.USB_MIDI1_GetEvent
+                0x000039d8       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x000039d8                USB_MIDI1_GetEvent
+ .text.USB_MIDI1_ProcessUsbOut
+                0x00003a80      0x150 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x00003a80                USB_MIDI1_ProcessUsbOut
+ .text.USB_MIDI2_GetEvent
+                0x00003bd0       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x00003bd0                USB_MIDI2_GetEvent
+ .text.USB_MIDI2_ProcessUsbOut
+                0x00003c78      0x150 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x00003c78                USB_MIDI2_ProcessUsbOut
+ .text.Sleep_isr_StartEx
+                0x00003dc8       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+                0x00003dc8                Sleep_isr_StartEx
+ .text.Sleep_isr_SetVector
+                0x00003dec       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+                0x00003dec                Sleep_isr_SetVector
+ .text.Sleep_isr_SetPriority
+                0x00003e10       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+                0x00003e10                Sleep_isr_SetPriority
+ .text.Sleep_isr_Enable
+                0x00003e34       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+                0x00003e34                Sleep_isr_Enable
+ .text.Sleep_isr_Disable
+                0x00003e4c       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+                0x00003e4c                Sleep_isr_Disable
+ .text.USB_Dp_ClearInterrupt
+                0x00003e64       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+                0x00003e64                USB_Dp_ClearInterrupt
+ .text.CyPLL_OUT_Start
+                0x00003e84       0xb0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x00003e84                CyPLL_OUT_Start
+ .text.CyPLL_OUT_Stop
+                0x00003f34       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x00003f34                CyPLL_OUT_Stop
+ .text.CyIMO_Start
+                0x00003f54       0x94 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x00003f54                CyIMO_Start
+ .text.CyIMO_Stop
+                0x00003fe8       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x00003fe8                CyIMO_Stop
+ .text.CyUSB_PowerOnCheck
+                0x0000401c       0x60 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyIMO_SetTrimValue
+                0x0000407c      0x108 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyIMO_SetFreq
+                0x00004184      0x1ac .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x00004184                CyIMO_SetFreq
+ .text.CyIMO_SetSource
+                0x00004330       0x8c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x00004330                CyIMO_SetSource
+ .text.CyIMO_EnableDoubler
+                0x000043bc       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x000043bc                CyIMO_EnableDoubler
+ .text.CyIMO_DisableDoubler
+                0x000043dc       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x000043dc                CyIMO_DisableDoubler
+ .text.CyMasterClk_SetSource
+                0x000043fc       0x34 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x000043fc                CyMasterClk_SetSource
+ .text.CyMasterClk_SetDivider
+                0x00004430       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x00004430                CyMasterClk_SetDivider
+ .text.CyBusClk_Internal_SetDivider
+                0x00004450       0x78 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .text.CyBusClk_SetDivider
+                0x000044c8       0xb4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x000044c8                CyBusClk_SetDivider
+ .text.CyILO_Start100K
+                0x0000457c       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x0000457c                CyILO_Start100K
+ .text.CyILO_Stop100K
+                0x0000459c       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x0000459c                CyILO_Stop100K
+ .text.CyXTAL_Start
+                0x000045bc       0xd0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x000045bc                CyXTAL_Start
+ .text.CyXTAL_Stop
+                0x0000468c       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x0000468c                CyXTAL_Stop
+ .text.CyHalt   0x000046ac       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x000046ac                CyHalt
+ .text.CyDelayUs
+                0x000046c4       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x000046c4                CyDelayUs
+ .text.CyIntSetVector
+                0x000046e8       0x50 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x000046e8                CyIntSetVector
+ .text.CyIntSetPriority
+                0x00004738       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x00004738                CyIntSetPriority
+ .text.CyGetUniqueId
+                0x0000477c       0xc4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x0000477c                CyGetUniqueId
+ .text.CyPmSaveClocks
+                0x00004840      0x284 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+                0x00004840                CyPmSaveClocks
+ .text.CyPmRestoreClocks
+                0x00004ac4      0x300 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+                0x00004ac4                CyPmRestoreClocks
+ .text.CyPmSleep
+                0x00004dc4      0x170 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+                0x00004dc4                CyPmSleep
+ .text.CyPmReadStatus
+                0x00004f34       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+                0x00004f34                CyPmReadStatus
+ .text.CyPmFtwSetInterval
+                0x00004f90       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+                0x00004f90                CyPmFtwSetInterval
+ .text.CyPmHibSlpSaveSet
+                0x00005020      0x280 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.CyPmHibSlpRestore
+                0x000052a0      0x188 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .text.Keys_Notes_1_Write
+                0x00005428       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+                0x00005428                Keys_Notes_1_Write
+ .text.Keys_Notes_1_Read
+                0x00005448       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+                0x00005448                Keys_Notes_1_Read
+ .text.Keys_Notes_2_Write
+                0x00005460       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+                0x00005460                Keys_Notes_2_Write
+ .text.Keys_Notes_2_Read
+                0x00005480       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+                0x00005480                Keys_Notes_2_Read
+ .text.Keys_Notes_3_Write
+                0x00005498       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+                0x00005498                Keys_Notes_3_Write
+ .text.Keys_Notes_3_Read
+                0x000054b8       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+                0x000054b8                Keys_Notes_3_Read
+ .text.Keys_Notes_4_Write
+                0x000054d0       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+                0x000054d0                Keys_Notes_4_Write
+ .text.Keys_Notes_4_Read
+                0x000054f0       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+                0x000054f0                Keys_Notes_4_Read
+ .text.Keys_Notes_5_Write
+                0x00005508       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+                0x00005508                Keys_Notes_5_Write
+ .text.Keys_Notes_5_Read
+                0x00005528       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+                0x00005528                Keys_Notes_5_Read
+ .text.Keys_Notes_6_Write
+                0x00005540       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+                0x00005540                Keys_Notes_6_Write
+ .text.Keys_Notes_6_Read
+                0x00005560       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+                0x00005560                Keys_Notes_6_Read
+ .text.Chords_Notes_Write
+                0x00005578       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+                0x00005578                Chords_Notes_Write
+ .text.Chords_Bass_Notes_Write
+                0x00005598       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+                0x00005598                Chords_Bass_Notes_Write
+ .text.Bass_Notes_Write
+                0x000055b8       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+                0x000055b8                Bass_Notes_Write
+ .text.Chorus_Speed_Write
+                0x000055d8       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+                0x000055d8                Chorus_Speed_Write
+ .text.Tabs_1_Write
+                0x000055f8       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+                0x000055f8                Tabs_1_Write
+ .text.Tabs_1_Read
+                0x00005618       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+                0x00005618                Tabs_1_Read
+ .text.Tabs_2_Write
+                0x00005630       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+                0x00005630                Tabs_2_Write
+ .text.Tabs_2_Read
+                0x00005650       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+                0x00005650                Tabs_2_Read
+ .text.Tabs_3_Write
+                0x00005668       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+                0x00005668                Tabs_3_Write
+ .text.Tabs_3_Read
+                0x00005688       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+                0x00005688                Tabs_3_Read
+ .text.Tabs_4_Write
+                0x000056a0       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+                0x000056a0                Tabs_4_Write
+ .text.Tabs_4_Read
+                0x000056c0       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+                0x000056c0                Tabs_4_Read
+ .text          0x000056d8       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyBootAsmGnu.o)
+                0x000056d8                CyDelayCycles
+                0x000056e8                CyEnterCriticalSection
+                0x000056f0                CyExitCriticalSection
+ .text.MIDI1_UART_Start
+                0x000056f8       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                0x000056f8                MIDI1_UART_Start
+ .text.MIDI1_UART_Init
+                0x00005718       0x6c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                0x00005718                MIDI1_UART_Init
+ .text.MIDI1_UART_Enable
+                0x00005784       0x74 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                0x00005784                MIDI1_UART_Enable
+ .text.MIDI1_UART_Stop
+                0x000057f8       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                0x000057f8                MIDI1_UART_Stop
+ .text.MIDI1_UART_ClearRxBuffer
+                0x00005860       0x7c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                0x00005860                MIDI1_UART_ClearRxBuffer
+ .text.MIDI1_UART_PutChar
+                0x000058dc       0xb8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                0x000058dc                MIDI1_UART_PutChar
+ .text.MIDI1_UART_ClearTxBuffer
+                0x00005994       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                0x00005994                MIDI1_UART_ClearTxBuffer
+ .text.MIDI1_UART_RXISR
+                0x000059fc       0xdc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+                0x000059fc                MIDI1_UART_RXISR
+ .text.MIDI1_UART_TXISR
+                0x00005ad8       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+                0x00005ad8                MIDI1_UART_TXISR
+ .text.MIDI2_UART_Start
+                0x00005b48       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                0x00005b48                MIDI2_UART_Start
+ .text.MIDI2_UART_Init
+                0x00005b68       0x6c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                0x00005b68                MIDI2_UART_Init
+ .text.MIDI2_UART_Enable
+                0x00005bd4       0x74 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                0x00005bd4                MIDI2_UART_Enable
+ .text.MIDI2_UART_Stop
+                0x00005c48       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                0x00005c48                MIDI2_UART_Stop
+ .text.MIDI2_UART_ClearRxBuffer
+                0x00005cb0       0x7c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                0x00005cb0                MIDI2_UART_ClearRxBuffer
+ .text.MIDI2_UART_PutChar
+                0x00005d2c       0xb8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                0x00005d2c                MIDI2_UART_PutChar
+ .text.MIDI2_UART_ClearTxBuffer
+                0x00005de4       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                0x00005de4                MIDI2_UART_ClearTxBuffer
+ .text.MIDI2_UART_RXISR
+                0x00005e4c       0xdc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+                0x00005e4c                MIDI2_UART_RXISR
+ .text.MIDI2_UART_TXISR
+                0x00005f28       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+                0x00005f28                MIDI2_UART_TXISR
+ .text.USB_DispatchClassRqst
+                0x00005f98       0x7c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+                0x00005f98                USB_DispatchClassRqst
+ .text.CyFlash_SetWaitCycles
+                0x00006014       0xbc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+                0x00006014                CyFlash_SetWaitCycles
+ .text.USB_DispatchAUDIOClassRqst
+                0x000060d0       0x8c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+                0x000060d0                USB_DispatchAUDIOClassRqst
+ .text.__errno  0x0000615c        0xc c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x0000615c                __errno
+ .text.__libc_init_array
+                0x00006168       0x4c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00006168                __libc_init_array
+ .text.memcpy   0x000061b4       0x16 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                0x000061b4                memcpy
+ .text.memset   0x000061ca       0x10 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x000061ca                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x000061dc        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x000061dc        0x0
+ .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x000061dc        0x4
+ *(.eh_frame)
+ .eh_frame      0x000061dc        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .eh_frame      0x000061dc        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+                0x000061e0                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x000061e0                __exidx_end = .
+
+.rodata         0x000061e0      0x2b0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000061e0       0x10 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x000061e0                MIDI_IDENTITY_REPLY
+ .rodata        0x000061f0       0x3c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .rodata        0x0000622c       0x14 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .rodata        0x00006240       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .rodata        0x00006250       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .rodata        0x00006260      0x1f4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+                0x00006260                USB_DEVICE0_DESCR
+                0x00006274                USB_DEVICE0_CONFIGURATION0_DESCR
+                0x000062fc                USB_STRING_DESCRIPTORS
+                0x000063b8                USB_SN_STRING_DESCRIPTOR
+                0x000063bc                USB_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+                0x000063cc                USB_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+                0x000063d0                USB_DEVICE0_CONFIGURATION0_TABLE
+                0x000063f8                USB_DEVICE0_TABLE
+                0x00006410                USB_TABLE
+                0x00006418                USB_MSOS_DESCRIPTOR
+                0x0000642c                USB_MSOS_CONFIGURATION_DESCR
+ .rodata.str1.1
+                0x00006454        0x2 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x00006458                . = ALIGN (0x4)
+ *fill*         0x00006456        0x2 
+ *(.init)
+ .init          0x00006458        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x00006458                _init
+ .init          0x0000645c        0x8 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x00006464                . = ALIGN (0x4)
+                0x00006464                __preinit_array_start = .
+ *(.preinit_array)
+                0x00006464                __preinit_array_end = .
+                0x00006464                . = ALIGN (0x4)
+                0x00006464                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00006464        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .init_array    0x00006468        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x0000646c                __init_array_end = .
+                0x0000646c                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x0000646c        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x0000646c                _fini
+ .fini          0x00006470        0x8 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x00006478                . = ALIGN (0x4)
+                0x00006478                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00006478        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x0000647c                __fini_array_end = .
+                0x0000647c                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x0000647c                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x0000647c                . = ALIGN (0x4)
+                0x0000647c                __cy_regions = .
+                0x0000647c        0x4 LONG 0x6490 __cy_region_init_ram
+                0x00006480        0x4 LONG 0x1fff8108 __cy_region_start_data
+                0x00006484        0x4 LONG 0x78 __cy_region_init_size_ram
+                0x00006488        0x4 LONG 0x5b0 __cy_region_zero_size_ram
+                0x0000648c                __cy_regions_end = .
+                0x00006490                . = ALIGN (0x8)
+ *fill*         0x0000648c        0x4 
+                0x00006490                _etext = .
+
+.cy_checksum_exclude
+                0x00006490        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x1fff8000      0x100
+                0x1fff8000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x1fff8000      0x100 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x1fff8000                CyRamVectors
+
+.noinit         0x1fff8100        0x5
+ *(.noinit)
+ .noinit        0x1fff8100        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .noinit        0x1fff8104        0x1 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x1fff8104                CyResetStatus
+
+.data           0x1fff8108       0x78 load address 0x00006490
+                0x1fff8108                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x1fff8108        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .jcr           0x1fff8108        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x1fff810c       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                0x1fff810c                cydelay_freq_hz
+                0x1fff8110                cydelay_freq_khz
+                0x1fff8114                cydelay_freq_mhz
+                0x1fff8118                cydelay_32k_ms
+ .data.impure_data
+                0x1fff811c       0x60 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x1fff817c        0x4 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x1fff817c                _impure_ptr
+                0x1fff8180                . = ALIGN (0x8)
+ *(.ram)
+                0x1fff8180                _edata = .
+
+.igot.plt       0x1fff8180        0x0 load address 0x00006508
+ .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.bss            0x1fff8180      0x5b0 load address 0x00006508
+                0x1fff8180                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x1fff8180       0x1c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .bss           0x1fff819c        0x5 .\CortexM3\ARM_GCC_493\Debug\main.o
+                0x1fff819c                usbActivityCounter
+                0x1fff819d                csButtStates
+                0x1fff819e                csButtStatesOld
+                0x1fff819f                csButtChange
+                0x1fff81a0                inqFlagsOld
+ .bss           0x1fff81a1        0x1 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                0x1fff81a1                SleepTimer_initVar
+ *fill*         0x1fff81a2        0x2 
+ .bss           0x1fff81a4        0x4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .bss           0x1fff81a8        0x4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .bss           0x1fff81ac        0x1 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                0x1fff81ac                USB_initVar
+ *fill*         0x1fff81ad        0x3 
+ .bss           0x1fff81b0        0x4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .bss           0x1fff81b4        0x4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .bss           0x1fff81b8       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .bss           0x1fff81d0       0x44 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .bss           0x1fff8214        0x9 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                0x1fff8214                MIDI1_UART_initVar
+                0x1fff8215                MIDI1_UART_txBufferRead
+                0x1fff8216                MIDI1_UART_txBufferWrite
+                0x1fff8217                MIDI1_UART_errorStatus
+                0x1fff8218                MIDI1_UART_rxBufferRead
+                0x1fff8219                MIDI1_UART_rxBufferWrite
+                0x1fff821a                MIDI1_UART_rxBufferLoopDetect
+                0x1fff821b                MIDI1_UART_rxBufferOverflow
+ .bss           0x1fff821d        0x9 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                0x1fff821d                MIDI2_UART_initVar
+                0x1fff821e                MIDI2_UART_txBufferRead
+                0x1fff821f                MIDI2_UART_txBufferWrite
+                0x1fff8220                MIDI2_UART_errorStatus
+                0x1fff8221                MIDI2_UART_rxBufferRead
+                0x1fff8222                MIDI2_UART_rxBufferWrite
+                0x1fff8223                MIDI2_UART_rxBufferLoopDetect
+                0x1fff8224                MIDI2_UART_rxBufferOverflow
+ *(COMMON)
+ *fill*         0x1fff8226        0x2 
+ COMMON         0x1fff8228       0x98 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                0x1fff8228                USB_transferState
+                0x1fff8229                USB_interfaceNumber
+                0x1fff822a                USB_lastPacketSize
+                0x1fff822c                USB_interfaceClass
+                0x1fff8230                USB_interfaceSetting
+                0x1fff8232                USB_ep0Mode
+                0x1fff8233                USB_device
+                0x1fff8234                USB_deviceAddress
+                0x1fff8235                USB_ep0Toggle
+                0x1fff8238                USB_interfaceSettingLast
+                0x1fff823a                USB_configurationChanged
+                0x1fff823c                USB_interfaceStatus
+                0x1fff823e                USB_transferByteCount
+                0x1fff8240                USB_configuration
+                0x1fff8244                USB_currentTD
+                0x1fff8250                USB_ep0Count
+                0x1fff8251                USB_deviceStatus
+                0x1fff8254                USB_EP
+ COMMON         0x1fff82c0       0x48 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                0x1fff82c0                USB_midiOutBuffer
+                0x1fff82e0                USB_MIDI1_InqFlags
+                0x1fff82e1                USB_midi_in_ep
+                0x1fff82e2                USB_midiInPointer
+                0x1fff82e3                USB_MIDI2_InqFlags
+                0x1fff82e4                USB_midi_out_ep
+                0x1fff82e8                USB_midiInBuffer
+ COMMON         0x1fff8308      0x1ff .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                0x1fff8308                MIDI1_UART_txBuffer
+                0x1fff8408                MIDI1_UART_rxBuffer
+ *fill*         0x1fff8507        0x1 
+ COMMON         0x1fff8508      0x1ff .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                0x1fff8508                MIDI2_UART_rxBuffer
+                0x1fff8608                MIDI2_UART_txBuffer
+ *fill*         0x1fff8707        0x1 
+ COMMON         0x1fff8708       0x22 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+                0x1fff8708                USB_idSerialNumberStringDescriptor
+                0x1fff8730                . = ALIGN (0x8)
+ *fill*         0x1fff872a        0x6 
+ *(.ram.b)
+                0x1fff8730                _end = .
+                0x1fff8730                __end = .
+                0x1fff8730                PROVIDE (end, .)
+                0x1fff8730                PROVIDE (__bss_end__, .)
+                0x00006490                __cy_region_init_ram = LOADADDR (.data)
+                0x00000078                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x000005b0                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x1fff8730       0x80 load address 0x00006508
+                0x1fff8730                . = _end
+                0x1fff87b0                . = (. + 0x80)
+ *fill*         0x1fff8730       0x80 
+                0x1fff87b0                __cy_heap_limit = .
+
+.stack          0x20007800      0x800
+                0x20007800                __cy_stack_limit = .
+                0x20008000                . = (. + 0x800)
+ *fill*         0x20007800      0x800 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+
+.cyloadermeta
+ *(.cyloadermeta)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyconfigecc    0x80000000      0xf90
+ *(.cyconfigecc)
+ .cyconfigecc   0x80000000      0xf90 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x80000000                cy_meta_configecc
+
+.cycustnvl      0x90000000        0x4
+ *(.cycustnvl)
+ .cycustnvl     0x90000000        0x4 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90000000                cy_meta_custnvl
+
+.cywolatch      0x90100000        0x4
+ *(.cywolatch)
+ .cywolatch     0x90100000        0x4 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90100000                cy_meta_wonvl
+
+.cyeeprom       0x90200000        0x0
+ *(.cyeeprom)
+                0x00000001                ASSERT ((. <= ((0x90200000 + ee_offset) + ee_size)), .cyeeprom data will not fit in EEPROM)
+
+.cyflashprotect
+                0x90400000      0x100
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000      0x100 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.rel.dyn        0x00006508        0x0 load address 0x9050000c
+ .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000     0x1040
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_aranges
+                0x00000070       0x18 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_aranges
+                0x00000088       0x48 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_aranges
+                0x000000d0       0x60 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .debug_aranges
+                0x00000130       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .debug_aranges
+                0x00000168       0x58 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .debug_aranges
+                0x000001c0       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .debug_aranges
+                0x000001f8       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .debug_aranges
+                0x00000230       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .debug_aranges
+                0x00000268       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .debug_aranges
+                0x000002a0       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .debug_aranges
+                0x000002d8       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .debug_aranges
+                0x00000310       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .debug_aranges
+                0x00000348       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .debug_aranges
+                0x00000380       0xc8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .debug_aranges
+                0x00000448       0x98 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .debug_aranges
+                0x000004e0       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .debug_aranges
+                0x00000518       0x40 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .debug_aranges
+                0x00000558       0x80 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .debug_aranges
+                0x000005d8       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .debug_aranges
+                0x000005f8       0x78 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .debug_aranges
+                0x00000670       0x80 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .debug_aranges
+                0x000006f0       0x48 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .debug_aranges
+                0x00000738      0x2a0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .debug_aranges
+                0x000009d8       0x98 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .debug_aranges
+                0x00000a70       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .debug_aranges
+                0x00000a98       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .debug_aranges
+                0x00000ac0       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .debug_aranges
+                0x00000ae8       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .debug_aranges
+                0x00000b10       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .debug_aranges
+                0x00000b38       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .debug_aranges
+                0x00000b60       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .debug_aranges
+                0x00000b88       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .debug_aranges
+                0x00000bb0       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .debug_aranges
+                0x00000bd8       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .debug_aranges
+                0x00000c00       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .debug_aranges
+                0x00000c28       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .debug_aranges
+                0x00000c50       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .debug_aranges
+                0x00000c78       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .debug_aranges
+                0x00000ca0       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000cc0       0xf0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .debug_aranges
+                0x00000db0       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .debug_aranges
+                0x00000dd8       0xf0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .debug_aranges
+                0x00000ec8       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .debug_aranges
+                0x00000ef0       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .debug_aranges
+                0x00000f10       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+ .debug_aranges
+                0x00000f28       0x80 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .debug_aranges
+                0x00000fa8       0x78 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .debug_aranges
+                0x00001020       0x20 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x7818
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x265 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_info    0x00000265      0x13f .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_info    0x000003a4      0x319 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_info    0x000006bd      0x44b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .debug_info    0x00000b08      0x11e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .debug_info    0x00000c26      0x1a4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .debug_info    0x00000dca      0x11e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .debug_info    0x00000ee8      0x11e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .debug_info    0x00001006      0x11e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .debug_info    0x00001124      0x11e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .debug_info    0x00001242      0x11e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .debug_info    0x00001360      0x11e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .debug_info    0x0000147e      0x11e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .debug_info    0x0000159c      0x11e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .debug_info    0x000016ba      0x70b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .debug_info    0x00001dc5      0x521 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .debug_info    0x000022e6      0x21e .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .debug_info    0x00002504      0x186 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .debug_info    0x0000268a      0x94d .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .debug_info    0x00002fd7      0x19d .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .debug_info    0x00003174      0x645 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .debug_info    0x000037b9      0x23a .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .debug_info    0x000039f3      0x171 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .debug_info    0x00003b64      0xe4a .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .debug_info    0x000049ae      0x561 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .debug_info    0x00004f0f       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .debug_info    0x00004fe6       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .debug_info    0x000050bd       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .debug_info    0x00005194       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .debug_info    0x0000526b       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .debug_info    0x00005342       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .debug_info    0x00005419       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .debug_info    0x000054f0       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .debug_info    0x000055c7       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .debug_info    0x0000569e       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .debug_info    0x00005775       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .debug_info    0x0000584c       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .debug_info    0x00005923       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .debug_info    0x000059fa       0xd7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .debug_info    0x00005ad1       0x8d .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyBootAsmGnu.o)
+ .debug_info    0x00005b5e      0x641 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .debug_info    0x0000619f      0x17c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .debug_info    0x0000631b      0x641 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .debug_info    0x0000695c      0x17c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .debug_info    0x00006ad8      0x1bc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .debug_info    0x00006c94      0x2d1 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+ .debug_info    0x00006f65      0x36a .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .debug_info    0x000072cf      0x453 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .debug_info    0x00007722       0xf6 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+
+.debug_abbrev   0x00000000     0x29e8
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x13a .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_abbrev  0x0000013a       0x77 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_abbrev  0x000001b1      0x1b6 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_abbrev  0x00000367      0x1b7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .debug_abbrev  0x0000051e       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .debug_abbrev  0x000005ae       0xd3 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .debug_abbrev  0x00000681       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .debug_abbrev  0x00000711       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .debug_abbrev  0x000007a1       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .debug_abbrev  0x00000831       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .debug_abbrev  0x000008c1       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .debug_abbrev  0x00000951       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .debug_abbrev  0x000009e1       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .debug_abbrev  0x00000a89       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .debug_abbrev  0x00000b31      0x1f3 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .debug_abbrev  0x00000d24      0x161 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .debug_abbrev  0x00000e85       0xfd .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .debug_abbrev  0x00000f82       0xd1 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .debug_abbrev  0x00001053      0x1b9 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .debug_abbrev  0x0000120c       0xc5 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .debug_abbrev  0x000012d1      0x1bd .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .debug_abbrev  0x0000148e      0x172 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .debug_abbrev  0x00001600       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .debug_abbrev  0x00001690      0x217 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .debug_abbrev  0x000018a7      0x161 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .debug_abbrev  0x00001a08       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .debug_abbrev  0x00001a89       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .debug_abbrev  0x00001b0a       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .debug_abbrev  0x00001b8b       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .debug_abbrev  0x00001c0c       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .debug_abbrev  0x00001c8d       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .debug_abbrev  0x00001d0e       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .debug_abbrev  0x00001d8f       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .debug_abbrev  0x00001e10       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .debug_abbrev  0x00001e91       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .debug_abbrev  0x00001f12       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .debug_abbrev  0x00001f93       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .debug_abbrev  0x00002014       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .debug_abbrev  0x00002095       0x81 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .debug_abbrev  0x00002116       0x14 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x0000212a      0x15f .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .debug_abbrev  0x00002289       0xa2 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .debug_abbrev  0x0000232b      0x15f .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .debug_abbrev  0x0000248a       0xa2 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .debug_abbrev  0x0000252c       0xc5 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .debug_abbrev  0x000025f1       0xb4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+ .debug_abbrev  0x000026a5      0x13c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .debug_abbrev  0x000027e1      0x16c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .debug_abbrev  0x0000294d       0x9b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+
+.debug_line     0x00000000     0x3ec5
+ *(.debug_line)
+ .debug_line    0x00000000      0x2ca .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_line    0x000002ca       0x51 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .debug_line    0x0000031b      0x1dc .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_line    0x000004f7      0x219 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .debug_line    0x00000710       0x92 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .debug_line    0x000007a2       0xf6 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .debug_line    0x00000898       0x92 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .debug_line    0x0000092a       0x97 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .debug_line    0x000009c1       0x97 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .debug_line    0x00000a58       0x96 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .debug_line    0x00000aee       0x97 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .debug_line    0x00000b85       0x96 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .debug_line    0x00000c1b       0xb3 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .debug_line    0x00000cce       0xb3 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .debug_line    0x00000d81      0x2f6 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .debug_line    0x00001077      0x212 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .debug_line    0x00001289       0xc8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .debug_line    0x00001351       0xde .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .debug_line    0x0000142f      0x46b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .debug_line    0x0000189a       0x83 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .debug_line    0x0000191d      0x36f .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .debug_line    0x00001c8c      0x144 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .debug_line    0x00001dd0       0xba .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .debug_line    0x00001e8a      0x882 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .debug_line    0x0000270c      0x37f .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .debug_line    0x00002a8b       0x75 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .debug_line    0x00002b00       0x75 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .debug_line    0x00002b75       0x75 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .debug_line    0x00002bea       0x75 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .debug_line    0x00002c5f       0x75 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .debug_line    0x00002cd4       0x75 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .debug_line    0x00002d49       0x75 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .debug_line    0x00002dbe       0x7a .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .debug_line    0x00002e38       0x73 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .debug_line    0x00002eab       0x75 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .debug_line    0x00002f20       0x6f .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .debug_line    0x00002f8f       0x6f .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .debug_line    0x00002ffe       0x6f .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .debug_line    0x0000306d       0x6f .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .debug_line    0x000030dc       0x66 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyBootAsmGnu.o)
+ .debug_line    0x00003142      0x345 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .debug_line    0x00003487       0xb9 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .debug_line    0x00003540      0x345 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .debug_line    0x00003885       0xb9 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .debug_line    0x0000393e       0x89 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .debug_line    0x000039c7       0x59 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+ .debug_line    0x00003a20      0x205 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .debug_line    0x00003c25      0x215 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .debug_line    0x00003e3a       0x8b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+
+.debug_frame    0x00000000     0x3a28
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x164 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_frame   0x00000164       0xd8 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_frame   0x0000023c      0x16c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .debug_frame   0x000003a8       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .debug_frame   0x00000450      0x12c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .debug_frame   0x0000057c       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .debug_frame   0x00000624       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .debug_frame   0x000006cc       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .debug_frame   0x00000774       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .debug_frame   0x0000081c       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .debug_frame   0x000008c4       0xa8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .debug_frame   0x0000096c       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .debug_frame   0x000009fc       0x90 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .debug_frame   0x00000a8c      0x37c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .debug_frame   0x00000e08      0x23c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .debug_frame   0x00001044       0x98 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .debug_frame   0x000010dc       0xbc .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .debug_frame   0x00001198      0x224 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .debug_frame   0x000013bc       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .debug_frame   0x000013f4      0x1d4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .debug_frame   0x000015c8      0x1e8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .debug_frame   0x000017b0       0xf4 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .debug_frame   0x000018a4      0xc0c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .debug_frame   0x000024b0      0x234 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .debug_frame   0x000026e4       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .debug_frame   0x00002740       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .debug_frame   0x0000279c       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .debug_frame   0x000027f8       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .debug_frame   0x00002854       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .debug_frame   0x000028b0       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .debug_frame   0x0000290c       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .debug_frame   0x00002968       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .debug_frame   0x000029c4       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .debug_frame   0x00002a20       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .debug_frame   0x00002a7c       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .debug_frame   0x00002ad8       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .debug_frame   0x00002b34       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .debug_frame   0x00002b90       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .debug_frame   0x00002bec      0x428 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .debug_frame   0x00003014       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .debug_frame   0x00003070      0x428 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .debug_frame   0x00003498       0x5c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .debug_frame   0x000034f4       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .debug_frame   0x0000352c      0x210 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .debug_frame   0x0000373c      0x1f8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .debug_frame   0x00003934       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+ .debug_frame   0x0000396c       0x20 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x0000398c       0x28 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x000039b4       0x2c c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x000039e0       0x28 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00003a08       0x20 c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x34f9
+ *(.debug_str)
+ .debug_str     0x00000000      0x321 .\CortexM3\ARM_GCC_493\Debug\main.o
+                                0x362 (size before relaxing)
+ .debug_str     0x00000321       0x75 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+                                0x1e7 (size before relaxing)
+ .debug_str     0x00000396      0x13c .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                                0x2c8 (size before relaxing)
+ .debug_str     0x000004d2      0x191 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+                                0x329 (size before relaxing)
+ .debug_str     0x00000663       0x61 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+                                0x1d5 (size before relaxing)
+ .debug_str     0x000006c4       0xe9 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+                                0x260 (size before relaxing)
+ .debug_str     0x000007ad       0x51 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+                                0x1d5 (size before relaxing)
+ .debug_str     0x000007fe       0x6a .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+                                0x1ee (size before relaxing)
+ .debug_str     0x00000868       0x6a .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+                                0x1ee (size before relaxing)
+ .debug_str     0x000008d2       0x65 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+                                0x1e9 (size before relaxing)
+ .debug_str     0x00000937       0x6a .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+                                0x1ee (size before relaxing)
+ .debug_str     0x000009a1       0x65 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+                                0x1e9 (size before relaxing)
+ .debug_str     0x00000a06       0xc9 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+                                0x240 (size before relaxing)
+ .debug_str     0x00000acf       0xbd .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+                                0x240 (size before relaxing)
+ .debug_str     0x00000b8c      0x393 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+                                0x540 (size before relaxing)
+ .debug_str     0x00000f1f      0x29c .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+                                0x54f (size before relaxing)
+ .debug_str     0x000011bb       0x5b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+                                0x283 (size before relaxing)
+ .debug_str     0x00001216       0x80 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+                                0x238 (size before relaxing)
+ .debug_str     0x00001296      0x2c7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+                                0x6b7 (size before relaxing)
+ .debug_str     0x0000155d       0x53 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+                                0x24c (size before relaxing)
+ .debug_str     0x000015b0      0x303 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+                                0x579 (size before relaxing)
+ .debug_str     0x000018b3      0x136 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+                                0x2cf (size before relaxing)
+ .debug_str     0x000019e9       0x97 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+                                0x222 (size before relaxing)
+ .debug_str     0x00001a80      0x7d7 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+                                0x9db (size before relaxing)
+ .debug_str     0x00002257      0x365 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+                                0x528 (size before relaxing)
+ .debug_str     0x000025bc       0x53 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+                                0x1c1 (size before relaxing)
+ .debug_str     0x0000260f       0x4b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+                                0x1c1 (size before relaxing)
+ .debug_str     0x0000265a       0x4b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+                                0x1c1 (size before relaxing)
+ .debug_str     0x000026a5       0x4b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+                                0x1c1 (size before relaxing)
+ .debug_str     0x000026f0       0x4b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+                                0x1c1 (size before relaxing)
+ .debug_str     0x0000273b       0x4b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+                                0x1c1 (size before relaxing)
+ .debug_str     0x00002786       0x4b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+                                0x1c1 (size before relaxing)
+ .debug_str     0x000027d1       0x5a .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+                                0x1d0 (size before relaxing)
+ .debug_str     0x0000282b       0x24 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+                                0x1bb (size before relaxing)
+ .debug_str     0x0000284f       0x4b .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+                                0x1c1 (size before relaxing)
+ .debug_str     0x0000289a       0x39 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+                                0x1af (size before relaxing)
+ .debug_str     0x000028d3       0x39 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+                                0x1af (size before relaxing)
+ .debug_str     0x0000290c       0x39 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+                                0x1af (size before relaxing)
+ .debug_str     0x00002945       0x39 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+                                0x1af (size before relaxing)
+ .debug_str     0x0000297e      0x3d1 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+                                0x5f9 (size before relaxing)
+ .debug_str     0x00002d4f       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+                                0x2c2 (size before relaxing)
+ .debug_str     0x00002dbf      0x326 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+                                0x5f9 (size before relaxing)
+ .debug_str     0x000030e5       0x4a .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+                                0x2c2 (size before relaxing)
+ .debug_str     0x0000312f       0x37 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+                                0x268 (size before relaxing)
+ .debug_str     0x00003166       0xe8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+                                0x347 (size before relaxing)
+ .debug_str     0x0000324e      0x145 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+                                0x2e7 (size before relaxing)
+ .debug_str     0x00003393      0x11f .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+                                0x2e4 (size before relaxing)
+ .debug_str     0x000034b2       0x47 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+                                0x1e3 (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0xd10
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x60 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .debug_ranges  0x00000060       0x38 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .debug_ranges  0x00000098       0x50 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .debug_ranges  0x000000e8       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .debug_ranges  0x00000110       0x48 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .debug_ranges  0x00000158       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .debug_ranges  0x00000180       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .debug_ranges  0x000001a8       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .debug_ranges  0x000001d0       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .debug_ranges  0x000001f8       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .debug_ranges  0x00000220       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .debug_ranges  0x00000248       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .debug_ranges  0x00000270       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .debug_ranges  0x00000298       0xb8 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .debug_ranges  0x00000350       0x88 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .debug_ranges  0x000003d8       0x28 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .debug_ranges  0x00000400       0x30 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .debug_ranges  0x00000430       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .debug_ranges  0x000004a0       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .debug_ranges  0x000004b0       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .debug_ranges  0x00000518       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .debug_ranges  0x00000588       0x38 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .debug_ranges  0x000005c0      0x290 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .debug_ranges  0x00000850       0x88 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .debug_ranges  0x000008d8       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .debug_ranges  0x000008f0       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .debug_ranges  0x00000908       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .debug_ranges  0x00000920       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .debug_ranges  0x00000938       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .debug_ranges  0x00000950       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .debug_ranges  0x00000968       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .debug_ranges  0x00000980       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .debug_ranges  0x00000998       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .debug_ranges  0x000009b0       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .debug_ranges  0x000009c8       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .debug_ranges  0x000009e0       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .debug_ranges  0x000009f8       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .debug_ranges  0x00000a10       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .debug_ranges  0x00000a28       0xe0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .debug_ranges  0x00000b08       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .debug_ranges  0x00000b20       0xe0 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .debug_ranges  0x00000c00       0x18 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .debug_ranges  0x00000c18       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .debug_ranges  0x00000c28       0x70 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .debug_ranges  0x00000c98       0x68 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .debug_ranges  0x00000d00       0x10 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 .\CortexM3\ARM_GCC_493\Debug\main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .comment       0x00000000       0x71 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+ .ARM.attributes
+                0x0000001d       0x2d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x33 .\CortexM3\ARM_GCC_493\Debug\main.o
+ .ARM.attributes
+                0x00000098       0x33 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .ARM.attributes
+                0x000000cb       0x33 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+ .ARM.attributes
+                0x000000fe       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyfitter_cfg.o)
+ .ARM.attributes
+                0x00000131       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW2.o)
+ .ARM.attributes
+                0x00000164       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SleepTimer.o)
+ .ARM.attributes
+                0x00000197       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(SW1.o)
+ .ARM.attributes
+                0x000001ca       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI_PWR.o)
+ .ARM.attributes
+                0x000001fd       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutB.o)
+ .ARM.attributes
+                0x00000230       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InB.o)
+ .ARM.attributes
+                0x00000263       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_OutA.o)
+ .ARM.attributes
+                0x00000296       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(LED_InA.o)
+ .ARM.attributes
+                0x000002c9       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_PM.o)
+ .ARM.attributes
+                0x000002fc       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_PM.o)
+ .ARM.attributes
+                0x0000032f       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB.o)
+ .ARM.attributes
+                0x00000362       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_drv.o)
+ .ARM.attributes
+                0x00000395       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_episr.o)
+ .ARM.attributes
+                0x000003c8       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_pm.o)
+ .ARM.attributes
+                0x000003fb       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_std.o)
+ .ARM.attributes
+                0x0000042e       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_vnd.o)
+ .ARM.attributes
+                0x00000461       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_midi.o)
+ .ARM.attributes
+                0x00000494       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Sleep_isr.o)
+ .ARM.attributes
+                0x000004c7       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_Dp.o)
+ .ARM.attributes
+                0x000004fa       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyLib.o)
+ .ARM.attributes
+                0x0000052d       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(cyPm.o)
+ .ARM.attributes
+                0x00000560       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_1.o)
+ .ARM.attributes
+                0x00000593       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_2.o)
+ .ARM.attributes
+                0x000005c6       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_3.o)
+ .ARM.attributes
+                0x000005f9       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_4.o)
+ .ARM.attributes
+                0x0000062c       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_5.o)
+ .ARM.attributes
+                0x0000065f       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Keys_Notes_6.o)
+ .ARM.attributes
+                0x00000692       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Notes.o)
+ .ARM.attributes
+                0x000006c5       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chords_Bass_Notes.o)
+ .ARM.attributes
+                0x000006f8       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Bass_Notes.o)
+ .ARM.attributes
+                0x0000072b       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Chorus_Speed.o)
+ .ARM.attributes
+                0x0000075e       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_1.o)
+ .ARM.attributes
+                0x00000791       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_2.o)
+ .ARM.attributes
+                0x000007c4       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_3.o)
+ .ARM.attributes
+                0x000007f7       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(Tabs_4.o)
+ .ARM.attributes
+                0x0000082a       0x21 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x0000084b       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART.o)
+ .ARM.attributes
+                0x0000087e       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI1_UART_INT.o)
+ .ARM.attributes
+                0x000008b1       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART.o)
+ .ARM.attributes
+                0x000008e4       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(MIDI2_UART_INT.o)
+ .ARM.attributes
+                0x00000917       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_cls.o)
+ .ARM.attributes
+                0x0000094a       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_descr.o)
+ .ARM.attributes
+                0x0000097d       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CyFlash.o)
+ .ARM.attributes
+                0x000009b0       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(CySpc.o)
+ .ARM.attributes
+                0x000009e3       0x33 .\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.a(USB_audio.o)
+ .ARM.attributes
+                0x00000a16       0x2d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000a43       0x2d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000a70       0x2d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000a9d       0x2d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000aca       0x2d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000af7       0x2d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000b24       0x2d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+ .ARM.attributes
+                0x00000b51       0x1d c:/program files (x86)/cypress/psoc creator/4.0/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(.\CortexM3\ARM_GCC_493\Debug\Accoder_MIDI.elf elf32-littlearm)

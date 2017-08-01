@@ -1,6 +1,6 @@
 // ======================================================================
 // Accoder.v generated from TopDesign.cysch
-// 07/21/2017 at 11:30
+// 07/21/2017 at 17:51
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -761,10 +761,10 @@ module top ;
           wire  Net_222;
           wire  Net_221;
           wire  Net_220;
+          wire  Net_219;
           wire [6:0] count;
           wire [15:0] Reg2;
           wire [15:0] matrix_reg;
-          wire  Net_219;
           wire  Net_218;
           wire  Net_217;
           wire  Net_216;
@@ -870,16 +870,18 @@ module top ;
           wire  Net_102;
           wire  Net_101;
           wire  Net_9;
-          wire  Net_153;
-          wire  Net_309;
-          wire  Net_305;
-          wire  Net_306;
-          wire  Net_38;
-          wire  Net_40;
+          wire  Net_344;
+          wire  Net_347;
+          wire  Net_341;
+          wire  Net_342;
+          wire  Net_333;
+          wire  Net_332;
           wire [15:0] Reg5;
           wire [15:0] Reg6;
           wire [15:0] Reg7;
           wire [15:0] Reg8;
+          wire  Net_38;
+          wire  Net_40;
           wire  Net_41;
 
     BasicCounter_v1_0 BasicCounter_1 (
@@ -926,7 +928,7 @@ module top ;
                 4'b1111 :  tmp__mux_2_reg = matrix_reg[15];
             endcase
         end
-        assign Net_306 = tmp__mux_2_reg;
+        assign Net_333 = tmp__mux_2_reg;
     end
     // -- Mux end --
 
@@ -950,7 +952,7 @@ module top ;
     defparam Control_Reg_2.Bit5Mode = 0;
     defparam Control_Reg_2.Bit6Mode = 0;
     defparam Control_Reg_2.Bit7Mode = 0;
-    defparam Control_Reg_2.BitValue = 32;
+    defparam Control_Reg_2.BitValue = 0;
     defparam Control_Reg_2.BusDisplay = 1;
     defparam Control_Reg_2.ExtrReset = 0;
     defparam Control_Reg_2.NumOutputs = 8;
@@ -975,7 +977,7 @@ module top ;
     defparam Control_Reg_1.Bit5Mode = 0;
     defparam Control_Reg_1.Bit6Mode = 0;
     defparam Control_Reg_1.Bit7Mode = 0;
-    defparam Control_Reg_1.BitValue = 8;
+    defparam Control_Reg_1.BitValue = 0;
     defparam Control_Reg_1.BusDisplay = 1;
     defparam Control_Reg_1.ExtrReset = 0;
     defparam Control_Reg_1.NumOutputs = 8;
@@ -1052,7 +1054,7 @@ module top ;
     defparam Control_Reg_4.NumOutputs = 8;
 
 
-    assign Net_309 = count[0] & count[1] & count[2] & count[3] & count[4] & count[5] & count[6] & Net_41;
+    assign Net_342 = count[0] & count[1] & count[2] & count[3] & count[4] & count[5] & count[6] & Net_41;
 
 	wire [0:0] tmpOE__DATA_net;
 	wire [0:0] tmpFB_0__DATA_net;
@@ -1115,7 +1117,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		DATA
 		 (.oe(tmpOE__DATA_net),
-		  .y({Net_305}),
+		  .y({Net_332}),
 		  .fb({tmpFB_0__DATA_net[0:0]}),
 		  .io({tmpIO_0__DATA_net[0:0]}),
 		  .siovref(tmpSIOVREF__DATA_net),
@@ -1190,7 +1192,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		CLK
 		 (.oe(tmpOE__CLK_net),
-		  .y({Net_153}),
+		  .y({Net_341}),
 		  .fb({tmpFB_0__CLK_net[0:0]}),
 		  .io({tmpIO_0__CLK_net[0:0]}),
 		  .siovref(tmpSIOVREF__CLK_net),
@@ -1265,7 +1267,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		TE
 		 (.oe(tmpOE__TE_net),
-		  .y({Net_41}),
+		  .y({Net_344}),
 		  .fb({tmpFB_0__TE_net[0:0]}),
 		  .io({tmpIO_0__TE_net[0:0]}),
 		  .siovref(tmpSIOVREF__TE_net),
@@ -1329,7 +1331,7 @@ module top ;
     defparam Control_Reg_6.Bit5Mode = 0;
     defparam Control_Reg_6.Bit6Mode = 0;
     defparam Control_Reg_6.Bit7Mode = 0;
-    defparam Control_Reg_6.BitValue = 64;
+    defparam Control_Reg_6.BitValue = 0;
     defparam Control_Reg_6.BusDisplay = 1;
     defparam Control_Reg_6.ExtrReset = 0;
     defparam Control_Reg_6.NumOutputs = 8;
@@ -1379,7 +1381,7 @@ module top ;
     defparam Control_Reg_8.Bit5Mode = 0;
     defparam Control_Reg_8.Bit6Mode = 0;
     defparam Control_Reg_8.Bit7Mode = 0;
-    defparam Control_Reg_8.BitValue = 64;
+    defparam Control_Reg_8.BitValue = 0;
     defparam Control_Reg_8.BusDisplay = 1;
     defparam Control_Reg_8.ExtrReset = 0;
     defparam Control_Reg_8.NumOutputs = 8;
@@ -1429,7 +1431,7 @@ module top ;
     defparam Control_Reg_10.Bit5Mode = 0;
     defparam Control_Reg_10.Bit6Mode = 0;
     defparam Control_Reg_10.Bit7Mode = 0;
-    defparam Control_Reg_10.BitValue = 64;
+    defparam Control_Reg_10.BitValue = 0;
     defparam Control_Reg_10.BusDisplay = 1;
     defparam Control_Reg_10.ExtrReset = 0;
     defparam Control_Reg_10.NumOutputs = 8;
@@ -1769,10 +1771,16 @@ module top ;
     defparam USBMIDI_1.epDMAautoOptimization = 0;
 
 
-    assign Net_305 = ~Net_306;
+    assign Net_347 = ~Net_41;
 
 
-    assign Net_153 = ~Net_309;
+    assign Net_341 = ~Net_342;
+
+
+    assign Net_332 = ~Net_333;
+
+
+    assign Net_344 = ~Net_347;
 
 
 

@@ -1,0 +1,1200 @@
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 1   
+
+
+C51 COMPILER V9.51, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\DP8051\DP8051_Keil_951\Debug\main.obj
+COMPILER INVOKED BY: C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\import\keil\pk51\9.51\C51\BIN\c51.exe 
+                    -main.c NOIV LARGE MODDP2 OMF2 VB(1) NOIP INCDIR(.,Generated_Source\PSoC3) FF(3) DB WL(2) PR(.\DP8051\DP8051_Keil_951\Deb
+                    -ug/main.lst) CD OT(2,SIZE) OJ(.\DP8051\DP8051_Keil_951\Debug\main.obj)
+
+line level    source
+
+   1          /*******************************************************************************
+   2          * File Name: main.c
+   3          *
+   4          * Version: 1.0
+   5          *
+   6          * Description:
+   7          *  This example project demonstrates the MIDI interface device operation.  The 
+   8          *  project enumerates as a USB Audio Device with the MIDI feature and does not 
+   9          *  require additional drivers. The main goal of the USB MIDI interface is to 
+  10          *  transfer and convert MIDI data between external MIDI devices that use the 
+  11          *  UART interface, and a PC through the USB bus.                        
+  12          *   
+  13          * Related Document:
+  14          *  Universal Serial Bus Specification Revision 2.0 
+  15          *  Universal Serial Bus Device Class Definition for MIDI Devices Release 1.0
+  16          *  MIDI 1.0 Detailed Specification Document Version 4.2
+  17          *
+  18          ********************************************************************************
+  19          * Copyright 2012-2015, Cypress Semiconductor Corporation. All rights reserved.
+  20          * This software is owned by Cypress Semiconductor Corporation and is protected
+  21          * by and subject to worldwide patent and copyright laws and treaties.
+  22          * Therefore, you may use this software only as provided in the license agreement
+  23          * accompanying the software package from which you obtained this software.
+  24          * CYPRESS AND ITS SUPPLIERS MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  25          * WITH REGARD TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT,
+  26          * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  27          *******************************************************************************/
+  28          
+  29          #include <project.h>
+  30          
+  31          #define BUTT1                   (0x01u)
+  32          #define BUTT2                   (0x02u)
+  33          
+  34          #define DEVICE                  (0u)
+  35          #define MIDI_MSG_SIZE           (4u)
+  36          
+  37          /*MIDI Message Fields */
+  38          #define MIDI_MSG_TYPE           (0u)
+  39          #define MIDI_NOTE_NUMBER        (1u)
+  40          #define MIDI_NOTE_VELOCITY      (2u)
+  41          
+  42          /* MIDI Notes*/
+  43          #define NOTE_72                 (72u)
+  44          #define NOTE_76                 (76u)
+  45          
+  46          /* MIDI Notes Velocity*/
+  47          #define VOLUME_OFF              (0u)
+  48          #define VOLUME_ON               (100u)
+  49          
+  50          #define USB_SUSPEND_TIMEOUT     (2u)
+  51          
+  52          /* Identity Reply message */
+  53          const uint8 CYCODE MIDI_IDENTITY_REPLY[] = {
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 2   
+
+  54              0xF0u,      /* SysEx */
+  55              0x7Eu,      /* Non-real time */
+  56              0x7Fu,      /* ID of target device (7F - "All Call") */
+  57              0x06u,      /* Sub-ID#1 - General Information */
+  58              0x02u,      /* Sub-ID#2 - Identity Reply */
+  59              0x7Du,      /* Manufacturer's ID: 7D - Educational Use */
+  60              0xB4u, 0x04u,               /* Family code */
+  61              0x32u, 0xD2u,               /* Model number */
+  62              0x01u, 0x00u, 0x00u, 0x00u, /* Version number */
+  63              /*0xF7         End of SysEx automatically appended */
+  64          };
+  65          
+  66          /* Need for Identity Reply message */
+  67          extern volatile uint8 USB_MIDI1_InqFlags;
+  68          extern volatile uint8 USB_MIDI2_InqFlags;
+  69          
+  70          volatile uint8 usbActivityCounter = 0u;
+  71          
+  72          uint8 csButtStates = 0u;
+  73          uint8 csButtStatesOld = 0u;
+  74          uint8 csButtChange = 0u;
+  75          uint8 inqFlagsOld = 0u;
+  76          
+  77          
+  78          /*******************************************************************************
+  79          * Function Name: SleepIsr
+  80          ********************************************************************************
+  81          * Summary:
+  82          *  The sleep interrupt-service-routine used to determine a sleep condition.
+  83          *  The device goes into the Suspend state when there is a constant Idle 
+  84          *  state on its upstream-facing bus-lines for more than 3.0 ms. 
+  85          *  The device must be suspended drawing only suspend current from the 
+  86          *  bus after no more than 10 ms of the bus inactivity on all its ports.
+  87          *  This ISR is run each 4 ms, so after a second turn without the USB activity,  
+  88          *  the device should be suspended.
+  89          *
+  90          *******************************************************************************/
+  91          CY_ISR(SleepIsr)
+  92          {
+  93   1          /* Check USB activity */
+  94   1          if(0u != USB_CheckActivity()) 
+  95   1          {
+  96   2              usbActivityCounter = 0u;
+  97   2          } 
+  98   1          else 
+  99   1          {
+ 100   2              usbActivityCounter++;
+ 101   2          }
+ 102   1          /* Clear Pending Interrupt */
+ 103   1          SleepTimer_GetStatus();
+ 104   1      }
+ 105          
+ 106          
+ 107          /*******************************************************************************
+ 108          * Function Name: main
+ 109          ********************************************************************************
+ 110          * Summary:
+ 111          *       1. Starts the USBFS device and waits for enumaration.
+ 112          *
+ 113          *******************************************************************************/
+ 114          int main()
+ 115          {
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 3   
+
+ 116   1          uint8 midiMsg[MIDI_MSG_SIZE];    
+ 117   1      
+ 118   1          /* Enable Global Interrupts */
+ 119   1          CyGlobalIntEnable;
+ 120   1      
+ 121   1          /* Start USBFS device 0 with VDDD operation */
+ 122   1          USB_Start(DEVICE, USB_DWR_VDDD_OPERATION); 
+ 123   1      
+ 124   1          while(1u)
+ 125   1          {
+ 126   2              /* Host can send double SET_INTERFACE request */
+ 127   2              if(0u != USB_IsConfigurationChanged())
+ 128   2              {
+ 129   3                  /* Initialize IN endpoints when device configured */
+ 130   3                  if(0u != USB_GetConfiguration())   
+ 131   3                  {
+ 132   4                      /* Power ON CY8CKIT-044 board */
+ 133   4                      MIDI_PWR_Write(0u); 
+ 134   4                      
+ 135   4                      /* Start ISR to determine sleep condition */            
+ 136   4                      Sleep_isr_StartEx(SleepIsr);
+ 137   4                      
+ 138   4                      /* Start SleepTimer's operation */
+ 139   4                      SleepTimer_Start();
+ 140   4                      
+ 141   4                      /* Enable output endpoint */
+ 142   4                      USB_MIDI_Init();
+ 143   4                  }
+ 144   3                  else
+ 145   3                  {
+ 146   4                      SleepTimer_Stop();
+ 147   4                  }    
+ 148   3              }        
+ 149   2              
+ 150   2              /* Service USB MIDI when device is configured */
+ 151   2              if(0u != USB_GetConfiguration())    
+ 152   2              {
+ 153   3                  /* Call this API from UART RX ISR for Auto DMA mode */
+ 154   3                  #if(!USB_EP_MANAGEMENT_DMA_AUTO) 
+ 155   3                      USB_MIDI_IN_Service();
+ 156   3                  #endif
+ 157   3                  /* In Manual EP Memory Management mode OUT_EP_Service() 
+ 158   3                  *  may have to be called from main foreground or from OUT EP ISR
+ 159   3                  */
+ 160   3                  #if(!USB_EP_MANAGEMENT_DMA_AUTO) 
+ 161   3                      USB_MIDI_OUT_Service();
+ 162   3                  #endif
+ 163   3      
+ 164   3                  /* Sending Identity Reply Universal System Exclusive message 
+ 165   3                   * back to computer */
+ 166   3                  if(0u != (USB_MIDI1_InqFlags & USB_INQ_IDENTITY_REQ_FLAG))
+ 167   3                  {
+ 168   4                      USB_PutUsbMidiIn(sizeof(MIDI_IDENTITY_REPLY), \
+ 169   4                                  (uint8 *)MIDI_IDENTITY_REPLY, USB_MIDI_CABLE_00);
+ 170   4                      USB_MIDI1_InqFlags &= ~USB_INQ_IDENTITY_REQ_FLAG;
+ 171   4                  }
+ 172   3                  #if (USB_MIDI_EXT_MODE >= USB_TWO_EXT_INTRF)
+ 173   3                      if(0u != (USB_MIDI2_InqFlags & USB_INQ_IDENTITY_REQ_FLAG))
+ 174   3                      {
+ 175   4                          USB_PutUsbMidiIn(sizeof(MIDI_IDENTITY_REPLY), \
+ 176   4                                  (uint8 *)MIDI_IDENTITY_REPLY, USB_MIDI_CABLE_01);
+ 177   4                          USB_MIDI2_InqFlags &= ~USB_INQ_IDENTITY_REQ_FLAG;
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 4   
+
+ 178   4                      }
+ 179   3                  #endif /* End USB_MIDI_EXT_MODE >= USB_TWO_EXT_INTRF */
+ 180   3                  
+ 181   3                  /* Service Keys */
+ 182   3                      if (0u == SW1_Read()) 
+ 183   3                  {
+ 184   4                      csButtStates |= BUTT1;
+ 185   4                  }
+ 186   3                  else
+ 187   3                  {
+ 188   4                      csButtStates &= ~BUTT1;
+ 189   4                  }
+ 190   3                      if (0u == SW2_Read()) 
+ 191   3                  {
+ 192   4                      csButtStates |= BUTT2;
+ 193   4                  }
+ 194   3                  else
+ 195   3                  {
+ 196   4                      csButtStates &= ~BUTT2;
+ 197   4                  }
+ 198   3                  /* Process any button change */
+ 199   3                      if (0u != (csButtChange = csButtStates ^ csButtStatesOld)) 
+ 200   3                  {
+ 201   4                              csButtStatesOld = csButtStates;
+ 202   4      
+ 203   4                              /* All buttons are mapped to Note-On/Off messages */
+ 204   4                              midiMsg[MIDI_MSG_TYPE] = USB_MIDI_NOTE_ON;
+ 205   4                              
+ 206   4                              /* Button 1 */
+ 207   4                              if (0u != (csButtChange & BUTT1)) 
+ 208   4                      {
+ 209   5                                      /* Button determines note number */                     
+ 210   5                                      midiMsg[MIDI_NOTE_NUMBER] = NOTE_72;
+ 211   5                                      if (0u != (csButtStates & BUTT1))
+ 212   5                          {
+ 213   6                              /* Note On */
+ 214   6                              midiMsg[MIDI_NOTE_VELOCITY] = VOLUME_ON;                
+ 215   6                          }
+ 216   5                                      else
+ 217   5                          {
+ 218   6                              /* Note Off */
+ 219   6                              midiMsg[MIDI_NOTE_VELOCITY] = VOLUME_OFF;                       
+ 220   6                          }    
+ 221   5                                      /* Put MIDI Note-On/Off message into input endpoint */
+ 222   5                          USB_PutUsbMidiIn(USB_3BYTE_COMMON, midiMsg, USB_MIDI_CABLE_00);
+ 223   5                              }
+ 224   4      
+ 225   4                              /* Button 2 */
+ 226   4                              if (0u != (csButtChange & BUTT2))
+ 227   4                      {
+ 228   5                                      /* Button determines note number */                     
+ 229   5                                      midiMsg[MIDI_NOTE_NUMBER] = NOTE_76;
+ 230   5                                      if (0u != (csButtStates & BUTT2))
+ 231   5                          {
+ 232   6                              /* Note On */
+ 233   6                              midiMsg[MIDI_NOTE_VELOCITY] = VOLUME_ON;  
+ 234   6                          }
+ 235   5                                      else
+ 236   5                          {
+ 237   6                              /* Note Off */
+ 238   6                              midiMsg[MIDI_NOTE_VELOCITY] = VOLUME_OFF; 
+ 239   6                          }    
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 5   
+
+ 240   5                                      /* Put MIDI Note-On/Off message into input endpoint */
+ 241   5                                      USB_PutUsbMidiIn(USB_3BYTE_COMMON, midiMsg, USB_MIDI_CABLE_00);
+ 242   5                          /* Second Note message */
+ 243   5                          midiMsg[MIDI_MSG_TYPE] = USB_MIDI_NOTE_ON;
+ 244   5                              midiMsg[MIDI_NOTE_NUMBER] = NOTE_72;
+ 245   5                          if (0u != (csButtStates & BUTT2))
+ 246   5                          {
+ 247   6                              /* Note On */
+ 248   6                              midiMsg[MIDI_NOTE_VELOCITY] = VOLUME_ON;                    
+ 249   6                          }
+ 250   5                                      else
+ 251   5                          {
+ 252   6                              /* Note Off */
+ 253   6                              midiMsg[MIDI_NOTE_VELOCITY] = VOLUME_OFF;                       
+ 254   6                          }    
+ 255   5                                      /* Put MIDI Note-On/Off message into input endpoint */
+ 256   5                          USB_PutUsbMidiIn(USB_3BYTE_COMMON, midiMsg, USB_MIDI_CABLE_00);
+ 257   5                              }
+ 258   4                      #if(USB_EP_MANAGEMENT_DMA_AUTO) 
+                                 #if (USB_MIDI_EXT_MODE >= USB_ONE_EXT_INTRF)
+                                      MIDI1_UART_DisableRxInt();
+                                      #if (USB_MIDI_EXT_MODE >= USB_TWO_EXT_INTRF)
+                                          MIDI2_UART_DisableRxInt();
+                                      #endif /* End USB_MIDI_EXT_MODE >= USB_TWO_EXT_INTRF */
+                                  #endif /* End USB_MIDI_EXT_MODE >= USB_ONE_EXT_INTRF */            
+                                  USB_MIDI_IN_Service();
+                                  #if (USB_MIDI_EXT_MODE >= USB_ONE_EXT_INTRF)
+                                      MIDI1_UART_EnableRxInt();
+                                      #if (USB_MIDI_EXT_MODE >= USB_TWO_EXT_INTRF)
+                                          MIDI2_UART_EnableRxInt();
+                                      #endif /* End USB_MIDI_EXT_MODE >= USB_TWO_EXT_INTRF */
+                                  #endif /* End USB_MIDI_EXT_MODE >= USB_ONE_EXT_INTRF */                
+                              #endif
+ 273   4                      }
+ 274   3              
+ 275   3                  /* Check if host requested USB Suspend */
+ 276   3                  if( usbActivityCounter >= USB_SUSPEND_TIMEOUT ) 
+ 277   3                  {
+ 278   4                      MIDI1_UART_Sleep();
+ 279   4                      MIDI2_UART_Sleep();
+ 280   4                      
+ 281   4                      /* Power OFF CY8CKIT-044 board */
+ 282   4                      MIDI_PWR_Write(1u);     
+ 283   4                      
+ 284   4                      /***************************************************************
+ 285   4                      * Disable USBFS block and set DP Interrupt for wake-up 
+ 286   4                      * from sleep mode. 
+ 287   4                      ***************************************************************/
+ 288   4                      USB_Suspend(); 
+ 289   4                      /* Prepares system clocks for sleep mode */
+ 290   4                      CyPmSaveClocks();
+ 291   4                      /***************************************************************
+ 292   4                      * Switch to the Sleep Mode for the PSoC 3 or PSoC 5LP devices:
+ 293   4                      *  - PM_SLEEP_TIME_NONE: wakeup time is defined by PICU source
+ 294   4                      *  - PM_SLEEP_SRC_PICU: PICU wakeup source 
+ 295   4                      ***************************************************************/
+ 296   4                      CyPmSleep(PM_SLEEP_TIME_NONE, PM_SLEEP_SRC_PICU);
+ 297   4                      /* Restore clock configuration */
+ 298   4                      CyPmRestoreClocks();
+ 299   4                      /* Enable USBFS block after power-down mode */
+ 300   4                      USB_Resume();
+ 301   4                      
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 6   
+
+ 302   4                      /* Enable output endpoint */
+ 303   4                      USB_MIDI_Init();
+ 304   4                      
+ 305   4                      /* Power ON CY8CKIT-044 board */
+ 306   4                      MIDI_PWR_Write(0u);
+ 307   4                      
+ 308   4                      MIDI1_UART_Wakeup();
+ 309   4                      MIDI2_UART_Wakeup();
+ 310   4                      usbActivityCounter = 0u; /* Re-init USB Activity Counter*/
+ 311   4                  }
+ 312   3              }
+ 313   2          }
+ 314   1      }
+ 315          
+ 316          
+ 317          /*******************************************************************************
+ 318          * Function Name: USB_callbackLocalMidiEvent
+ 319          ********************************************************************************
+ 320          * Summary: Local processing of the USB MIDI out-events.
+ 321          *
+ 322          *******************************************************************************/
+ 323          void USB_callbackLocalMidiEvent(uint8 cable, uint8 *midiMsg) CYREENTRANT
+ 324          {
+ 325   1          /* Support General System On/Off Message. */
+ 326   1          if((0u == (USB_MIDI1_InqFlags & USB_INQ_SYSEX_FLAG)) \
+ 327   1                  && (0u != (inqFlagsOld & USB_INQ_SYSEX_FLAG)))
+ 328   1          {
+ 329   2              if(midiMsg[USB_EVENT_BYTE0] == USB_MIDI_SYSEX_GEN_MESSAGE)
+ 330   2              {
+ 331   3                  if(midiMsg[USB_EVENT_BYTE1] == USB_MIDI_SYSEX_SYSTEM_ON)
+ 332   3                  {
+ 333   4                      MIDI_PWR_Write(0u); /* Power ON */
+ 334   4                  }
+ 335   3                  else if(midiMsg[USB_EVENT_BYTE1] == USB_MIDI_SYSEX_SYSTEM_OFF)
+ 336   3                  {
+ 337   4                      MIDI_PWR_Write(1u); /* Power OFF */
+ 338   4                  }
+ 339   3              }
+ 340   2          }
+ 341   1          inqFlagsOld = USB_MIDI1_InqFlags;
+ 342   1          cable = cable;
+ 343   1      }    
+ 344          
+ 345          
+ 346          /*******************************************************************************
+ 347          * Function Name: USB_MIDI1_ProcessUsbOut_EntryCallback
+ 348          ********************************************************************************
+ 349          * Summary:  Turn the LED_OutA on at the beginning of the function
+ 350          * USB_MIDI1_ProcessUsbOut() when data comes to be put in the UART1 out
+ 351          * buffer.
+ 352          * 
+ 353          *******************************************************************************/
+ 354          void USB_MIDI1_ProcessUsbOut_EntryCallback(void)
+ 355          {
+ 356   1          LED_OutA_Write(1);
+ 357   1      }
+ 358          
+ 359          
+ 360          /*******************************************************************************
+ 361          * Function Name: USB_MIDI1_ProcessUsbOut_ExitCallback
+ 362          ********************************************************************************
+ 363          * Summary:  Turn the LED_OutA off at the end of the function  
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 7   
+
+ 364          * USB_MIDI1_ProcessUsbOut() when data is put in the UART1 out-buffer.
+ 365          * 
+ 366          *******************************************************************************/
+ 367          void USB_MIDI1_ProcessUsbOut_ExitCallback(void)
+ 368          {
+ 369   1          LED_OutA_Write(0);
+ 370   1      }
+ 371          
+ 372          
+ 373          /*******************************************************************************
+ 374          * Function Name: USB_MIDI2_ProcessUsbOut_EntryCallback
+ 375          ********************************************************************************
+ 376          * Summary:  Turn the LED_OutB on at the beginning of the function  
+ 377          * USB_MIDI2_ProcessUsbOut() when data comes to be put in the UART2 out- 
+ 378          * buffer  
+ 379          * 
+ 380          *******************************************************************************/
+ 381          void USB_MIDI2_ProcessUsbOut_EntryCallback(void)
+ 382          {
+ 383   1          LED_OutB_Write(1);
+ 384   1      }
+ 385          
+ 386          
+ 387          /*******************************************************************************
+ 388          * Function Name: USB_MIDI2_ProcessUsbOut_ExitCallback
+ 389          ********************************************************************************
+ 390          * Summary:  Turn the LED_OutB off at the end of the function  
+ 391          * USB_MIDI2_ProcessUsbOut() when data is put in the UART2 out-buffer.
+ 392          * 
+ 393          *******************************************************************************/
+ 394          void USB_MIDI2_ProcessUsbOut_ExitCallback(void)
+ 395          {
+ 396   1          LED_OutB_Write(0);
+ 397   1      }
+ 398          
+ 399          
+ 400          /*******************************************************************************
+ 401          * Function Name: MIDI1_UART_RXISR_EntryCallback
+ 402          ********************************************************************************
+ 403          * Summary:  Turn the LED_InA on at the beginning of the MIDI1_UART_RXISR ISR  
+ 404          * when data comes to UART1 to be put in the USBFS_MIDI IN endpoint
+ 405          * buffer.
+ 406          *
+ 407          *******************************************************************************/
+ 408          void MIDI1_UART_RXISR_EntryCallback(void)
+ 409          {
+ 410   1          /* These LEDs indicate MIDI input activity */
+ 411   1          LED_InA_Write(1);
+ 412   1      }
+ 413          
+ 414          
+ 415          /*******************************************************************************
+ 416          * Function Name: MIDI1_UART_RXISR_ExitCallback
+ 417          ********************************************************************************
+ 418          * Summary:  Turn the LED_InA off at the end of the MIDI1_UART_RXISR ISR  
+ 419          * when data is put in the USBFS_MIDI IN endpoint buffer.
+ 420          *
+ 421          *******************************************************************************/
+ 422          void MIDI1_UART_RXISR_ExitCallback(void)
+ 423          {
+ 424   1          #if (USB_EP_MANAGEMENT_DMA_AUTO) 
+                      USB_MIDI_IN_Service();
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 8   
+
+                  #endif /* (USB_EP_MANAGEMENT_DMA_AUTO) */
+ 427   1          
+ 428   1          LED_InA_Write(0);
+ 429   1      }
+ 430          
+ 431          
+ 432          /*******************************************************************************
+ 433          * Function Name: MIDI2_UART_RXISR_EntryCallback
+ 434          ********************************************************************************
+ 435          * Summary:  Turn the LED_InB on at the beginning of the MIDI2_UART_RXISR ISR  
+ 436          * when data comes to UART2 to be put in the USBFS_MIDI IN endpoint  
+ 437          * buffer.
+ 438          *
+ 439          *******************************************************************************/
+ 440          void MIDI2_UART_RXISR_EntryCallback(void)
+ 441          {
+ 442   1          /* These LEDs indicate MIDI input activity */
+ 443   1          LED_InB_Write(1);
+ 444   1      }
+ 445          
+ 446          
+ 447          /*******************************************************************************
+ 448          * Function Name: MIDI2_UART_RXISR_ExitCallback
+ 449          ********************************************************************************
+ 450          * Summary:  Turn the LED_InB off at the end of the MIDI2_UART_RXISR ISR  
+ 451          * when data is put in the USBFS_MIDI IN endpoint buffer
+ 452          *
+ 453          *******************************************************************************/
+ 454          void MIDI2_UART_RXISR_ExitCallback(void)
+ 455          {
+ 456   1          #if (USB_EP_MANAGEMENT_DMA_AUTO) 
+                      USB_MIDI_IN_Service();
+                  #endif /* (USB_EP_MANAGEMENT_DMA_AUTO) */
+ 459   1          
+ 460   1          LED_InB_Write(0);
+ 461   1      }
+ 462          
+ 463          
+ 464          /* [] END OF FILE */
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 9   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION SleepIsr (BEGIN)
+0000 C0E0              PUSH    ACC
+0002 C0F0              PUSH    B
+0004 C083              PUSH    DPH
+0006 C082              PUSH    DPL
+0008 C085              PUSH    DPH1
+000A C084              PUSH    DPL1
+000C C086              PUSH    DPS
+000E 758600            MOV     DPS,#00H
+0011 C000        E     PUSH    ?C?XPAGE1SFR
+0013 750000      E     MOV     ?C?XPAGE1SFR,#?C?XPAGE1RST
+0016 C0D0              PUSH    PSW
+0018 75D000            MOV     PSW,#00H
+001B C000              PUSH    AR0
+001D C001              PUSH    AR1
+001F C002              PUSH    AR2
+0021 C003              PUSH    AR3
+0023 C004              PUSH    AR4
+0025 C005              PUSH    AR5
+0027 C006              PUSH    AR6
+0029 C007              PUSH    AR7
+                                           ; SOURCE LINE # 91
+                                           ; SOURCE LINE # 94
+002B 120000      E     LCALL   USB_CheckActivity
+002E EF                MOV     A,R7
+002F 6007              JZ      ?C0001
+                                           ; SOURCE LINE # 95
+                                           ; SOURCE LINE # 96
+0031 900000      R     MOV     DPTR,#usbActivityCounter
+0034 E4                CLR     A
+0035 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 97
+0036 8006              SJMP    ?C0002
+0038         ?C0001:
+                                           ; SOURCE LINE # 99
+                                           ; SOURCE LINE # 100
+0038 900000      R     MOV     DPTR,#usbActivityCounter
+003B E0                MOVX    A,@DPTR
+003C 04                INC     A
+003D F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 101
+003E         ?C0002:
+                                           ; SOURCE LINE # 103
+003E 120000      E     LCALL   SleepTimer_GetStatus
+                                           ; SOURCE LINE # 104
+0041 D007              POP     AR7
+0043 D006              POP     AR6
+0045 D005              POP     AR5
+0047 D004              POP     AR4
+0049 D003              POP     AR3
+004B D002              POP     AR2
+004D D001              POP     AR1
+004F D000              POP     AR0
+0051 D0D0              POP     PSW
+0053 D000        E     POP     ?C?XPAGE1SFR
+0055 D086              POP     DPS
+0057 D084              POP     DPL1
+0059 D085              POP     DPH1
+005B D082              POP     DPL
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 10  
+
+005D D083              POP     DPH
+005F D0F0              POP     B
+0061 D0E0              POP     ACC
+0063 32                RETI    
+             ; FUNCTION SleepIsr (END)
+
+             ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 114
+                                           ; SOURCE LINE # 115
+                                           ; SOURCE LINE # 116
+                                           ; SOURCE LINE # 119
+0000 D2AF              SETB    EA
+0002 9044F4            MOV     DPTR,#044F4H
+0005 74FD              MOV     A,#0FDH
+0007 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 122
+0008 7D02              MOV     R5,#02H
+000A 7F00              MOV     R7,#00H
+000C 120000      E     LCALL   _USB_Start
+000F         ?C0004:
+                                           ; SOURCE LINE # 124
+                                           ; SOURCE LINE # 125
+                                           ; SOURCE LINE # 127
+000F 120000      E     LCALL   USB_IsConfigurationChanged
+0012 EF                MOV     A,R7
+0013 601D              JZ      ?C0006
+                                           ; SOURCE LINE # 128
+                                           ; SOURCE LINE # 130
+0015 120000      E     LCALL   USB_GetConfiguration
+0018 EF                MOV     A,R7
+0019 6014              JZ      ?C0007
+                                           ; SOURCE LINE # 131
+                                           ; SOURCE LINE # 133
+001B 7F00              MOV     R7,#00H
+001D 120000      E     LCALL   _?MIDI_PWR_Write
+                                           ; SOURCE LINE # 136
+0020 7E00        R     MOV     R6,#HIGH SleepIsr
+0022 7F00        R     MOV     R7,#LOW SleepIsr
+0024 120000      E     LCALL   _Sleep_isr_StartEx
+                                           ; SOURCE LINE # 139
+0027 120000      E     LCALL   SleepTimer_Start
+                                           ; SOURCE LINE # 142
+002A 120000      E     LCALL   USB_MIDI_Init
+                                           ; SOURCE LINE # 143
+002D 8003              SJMP    ?C0006
+002F         ?C0007:
+                                           ; SOURCE LINE # 145
+                                           ; SOURCE LINE # 146
+002F 120000      E     LCALL   SleepTimer_Stop
+                                           ; SOURCE LINE # 147
+                                           ; SOURCE LINE # 148
+0032         ?C0006:
+                                           ; SOURCE LINE # 151
+0032 120000      E     LCALL   USB_GetConfiguration
+0035 EF                MOV     A,R7
+0036 60D7              JZ      ?C0004
+                                           ; SOURCE LINE # 152
+                                           ; SOURCE LINE # 155
+0038 120000      E     LCALL   _?USB_MIDI_IN_Service
+                                           ; SOURCE LINE # 161
+003B 120000      E     LCALL   _?USB_MIDI_OUT_Service
+                                           ; SOURCE LINE # 166
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 11  
+
+003E 900000      E     MOV     DPTR,#USB_MIDI1_InqFlags
+0041 E0                MOVX    A,@DPTR
+0042 FF                MOV     R7,A
+0043 EF                MOV     A,R7
+0044 5402              ANL     A,#02H
+0046 FF                MOV     R7,A
+0047 7E00              MOV     R6,#00H
+0049 EF                MOV     A,R7
+004A 4E                ORL     A,R6
+004B 601E              JZ      ?C0010
+                                           ; SOURCE LINE # 167
+                                           ; SOURCE LINE # 168
+004D 7BFF              MOV     R3,#0FFH
+004F 7A00        R     MOV     R2,#HIGH MIDI_IDENTITY_REPLY
+0051 7900        R     MOV     R1,#LOW MIDI_IDENTITY_REPLY
+0053 900000      E     MOV     DPTR,#?_USB_PutUsbMidiIn?BYTE+04H
+0056 E4                CLR     A
+0057 F0                MOVX    @DPTR,A
+0058 7F0E              MOV     R7,#0EH
+005A 120000      E     LCALL   _USB_PutUsbMidiIn
+                                           ; SOURCE LINE # 170
+005D 900000      E     MOV     DPTR,#USB_MIDI1_InqFlags
+0060 E0                MOVX    A,@DPTR
+0061 FF                MOV     R7,A
+0062 EF                MOV     A,R7
+0063 54FD              ANL     A,#0FDH
+0065 FF                MOV     R7,A
+0066 900000      E     MOV     DPTR,#USB_MIDI1_InqFlags
+0069 EF                MOV     A,R7
+006A F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 171
+006B         ?C0010:
+                                           ; SOURCE LINE # 173
+006B 900000      E     MOV     DPTR,#USB_MIDI2_InqFlags
+006E E0                MOVX    A,@DPTR
+006F FF                MOV     R7,A
+0070 EF                MOV     A,R7
+0071 5402              ANL     A,#02H
+0073 FF                MOV     R7,A
+0074 7E00              MOV     R6,#00H
+0076 EF                MOV     A,R7
+0077 4E                ORL     A,R6
+0078 601F              JZ      ?C0011
+                                           ; SOURCE LINE # 174
+                                           ; SOURCE LINE # 175
+007A 7BFF              MOV     R3,#0FFH
+007C 7A00        R     MOV     R2,#HIGH MIDI_IDENTITY_REPLY
+007E 7900        R     MOV     R1,#LOW MIDI_IDENTITY_REPLY
+0080 900000      E     MOV     DPTR,#?_USB_PutUsbMidiIn?BYTE+04H
+0083 7410              MOV     A,#010H
+0085 F0                MOVX    @DPTR,A
+0086 7F0E              MOV     R7,#0EH
+0088 120000      E     LCALL   _USB_PutUsbMidiIn
+                                           ; SOURCE LINE # 177
+008B 900000      E     MOV     DPTR,#USB_MIDI2_InqFlags
+008E E0                MOVX    A,@DPTR
+008F FF                MOV     R7,A
+0090 EF                MOV     A,R7
+0091 54FD              ANL     A,#0FDH
+0093 FF                MOV     R7,A
+0094 900000      E     MOV     DPTR,#USB_MIDI2_InqFlags
+0097 EF                MOV     A,R7
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 12  
+
+0098 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 178
+0099         ?C0011:
+                                           ; SOURCE LINE # 182
+0099 120000      E     LCALL   SW1_Read
+009C EF                MOV     A,R7
+009D 7010              JNZ     ?C0012
+                                           ; SOURCE LINE # 183
+                                           ; SOURCE LINE # 184
+009F 900000      R     MOV     DPTR,#csButtStates
+00A2 E0                MOVX    A,@DPTR
+00A3 FF                MOV     R7,A
+00A4 EF                MOV     A,R7
+00A5 4401              ORL     A,#01H
+00A7 FF                MOV     R7,A
+00A8 900000      R     MOV     DPTR,#csButtStates
+00AB EF                MOV     A,R7
+00AC F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 185
+00AD 800E              SJMP    ?C0013
+00AF         ?C0012:
+                                           ; SOURCE LINE # 187
+                                           ; SOURCE LINE # 188
+00AF 900000      R     MOV     DPTR,#csButtStates
+00B2 E0                MOVX    A,@DPTR
+00B3 FF                MOV     R7,A
+00B4 EF                MOV     A,R7
+00B5 54FE              ANL     A,#0FEH
+00B7 FF                MOV     R7,A
+00B8 900000      R     MOV     DPTR,#csButtStates
+00BB EF                MOV     A,R7
+00BC F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 189
+00BD         ?C0013:
+                                           ; SOURCE LINE # 190
+00BD 120000      E     LCALL   SW2_Read
+00C0 EF                MOV     A,R7
+00C1 7010              JNZ     ?C0014
+                                           ; SOURCE LINE # 191
+                                           ; SOURCE LINE # 192
+00C3 900000      R     MOV     DPTR,#csButtStates
+00C6 E0                MOVX    A,@DPTR
+00C7 FF                MOV     R7,A
+00C8 EF                MOV     A,R7
+00C9 4402              ORL     A,#02H
+00CB FF                MOV     R7,A
+00CC 900000      R     MOV     DPTR,#csButtStates
+00CF EF                MOV     A,R7
+00D0 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 193
+00D1 800E              SJMP    ?C0015
+00D3         ?C0014:
+                                           ; SOURCE LINE # 195
+                                           ; SOURCE LINE # 196
+00D3 900000      R     MOV     DPTR,#csButtStates
+00D6 E0                MOVX    A,@DPTR
+00D7 FF                MOV     R7,A
+00D8 EF                MOV     A,R7
+00D9 54FD              ANL     A,#0FDH
+00DB FF                MOV     R7,A
+00DC 900000      R     MOV     DPTR,#csButtStates
+00DF EF                MOV     A,R7
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 13  
+
+00E0 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 197
+00E1         ?C0015:
+                                           ; SOURCE LINE # 199
+00E1 900000      R     MOV     DPTR,#csButtStatesOld
+00E4 E0                MOVX    A,@DPTR
+00E5 FF                MOV     R7,A
+00E6 900000      R     MOV     DPTR,#csButtStates
+00E9 E0                MOVX    A,@DPTR
+00EA FE                MOV     R6,A
+00EB EE                MOV     A,R6
+00EC 6F                XRL     A,R7
+00ED FF                MOV     R7,A
+00EE 900000      R     MOV     DPTR,#csButtChange
+00F1 EF                MOV     A,R7
+00F2 F0                MOVX    @DPTR,A
+00F3 FF                MOV     R7,A
+00F4 EF                MOV     A,R7
+00F5 7003              JNZ     $ + 5H
+00F7 020000      R     LJMP    ?C0016
+                                           ; SOURCE LINE # 200
+                                           ; SOURCE LINE # 201
+00FA 900000      R     MOV     DPTR,#csButtStates
+00FD E0                MOVX    A,@DPTR
+00FE FF                MOV     R7,A
+00FF 900000      R     MOV     DPTR,#csButtStatesOld
+0102 EF                MOV     A,R7
+0103 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 204
+0104 900000      R     MOV     DPTR,#midiMsg
+0107 7490              MOV     A,#090H
+0109 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 207
+010A 900000      R     MOV     DPTR,#csButtChange
+010D E0                MOVX    A,@DPTR
+010E FF                MOV     R7,A
+010F EF                MOV     A,R7
+0110 5401              ANL     A,#01H
+0112 FF                MOV     R7,A
+0113 7E00              MOV     R6,#00H
+0115 EF                MOV     A,R7
+0116 4E                ORL     A,R6
+0117 6032              JZ      ?C0017
+                                           ; SOURCE LINE # 208
+                                           ; SOURCE LINE # 210
+0119 900000      R     MOV     DPTR,#midiMsg+01H
+011C 7448              MOV     A,#048H
+011E F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 211
+011F 900000      R     MOV     DPTR,#csButtStates
+0122 E0                MOVX    A,@DPTR
+0123 FF                MOV     R7,A
+0124 EF                MOV     A,R7
+0125 5401              ANL     A,#01H
+0127 FF                MOV     R7,A
+0128 7E00              MOV     R6,#00H
+012A EF                MOV     A,R7
+012B 4E                ORL     A,R6
+012C 6008              JZ      ?C0018
+                                           ; SOURCE LINE # 212
+                                           ; SOURCE LINE # 214
+012E 900000      R     MOV     DPTR,#midiMsg+02H
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 14  
+
+0131 7464              MOV     A,#064H
+0133 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 215
+0134 8005              SJMP    ?C0019
+0136         ?C0018:
+                                           ; SOURCE LINE # 217
+                                           ; SOURCE LINE # 219
+0136 900000      R     MOV     DPTR,#midiMsg+02H
+0139 E4                CLR     A
+013A F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 220
+013B         ?C0019:
+                                           ; SOURCE LINE # 222
+013B 7B01              MOV     R3,#01H
+013D 7A00        R     MOV     R2,#HIGH midiMsg
+013F 7900        R     MOV     R1,#LOW midiMsg
+0141 900000      E     MOV     DPTR,#?_USB_PutUsbMidiIn?BYTE+04H
+0144 E4                CLR     A
+0145 F0                MOVX    @DPTR,A
+0146 7F03              MOV     R7,#03H
+0148 120000      E     LCALL   _USB_PutUsbMidiIn
+                                           ; SOURCE LINE # 223
+014B         ?C0017:
+                                           ; SOURCE LINE # 226
+014B 900000      R     MOV     DPTR,#csButtChange
+014E E0                MOVX    A,@DPTR
+014F FF                MOV     R7,A
+0150 EF                MOV     A,R7
+0151 5402              ANL     A,#02H
+0153 FF                MOV     R7,A
+0154 7E00              MOV     R6,#00H
+0156 EF                MOV     A,R7
+0157 4E                ORL     A,R6
+0158 606A              JZ      ?C0016
+                                           ; SOURCE LINE # 227
+                                           ; SOURCE LINE # 229
+015A 900000      R     MOV     DPTR,#midiMsg+01H
+015D 744C              MOV     A,#04CH
+015F F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 230
+0160 900000      R     MOV     DPTR,#csButtStates
+0163 E0                MOVX    A,@DPTR
+0164 FF                MOV     R7,A
+0165 EF                MOV     A,R7
+0166 5402              ANL     A,#02H
+0168 FF                MOV     R7,A
+0169 7E00              MOV     R6,#00H
+016B EF                MOV     A,R7
+016C 4E                ORL     A,R6
+016D 6008              JZ      ?C0021
+                                           ; SOURCE LINE # 231
+                                           ; SOURCE LINE # 233
+016F 900000      R     MOV     DPTR,#midiMsg+02H
+0172 7464              MOV     A,#064H
+0174 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 234
+0175 8005              SJMP    ?C0022
+0177         ?C0021:
+                                           ; SOURCE LINE # 236
+                                           ; SOURCE LINE # 238
+0177 900000      R     MOV     DPTR,#midiMsg+02H
+017A E4                CLR     A
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 15  
+
+017B F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 239
+017C         ?C0022:
+                                           ; SOURCE LINE # 241
+017C 7B01              MOV     R3,#01H
+017E 7A00        R     MOV     R2,#HIGH midiMsg
+0180 7900        R     MOV     R1,#LOW midiMsg
+0182 900000      E     MOV     DPTR,#?_USB_PutUsbMidiIn?BYTE+04H
+0185 E4                CLR     A
+0186 F0                MOVX    @DPTR,A
+0187 7F03              MOV     R7,#03H
+0189 120000      E     LCALL   _USB_PutUsbMidiIn
+                                           ; SOURCE LINE # 243
+018C 900000      R     MOV     DPTR,#midiMsg
+018F 7490              MOV     A,#090H
+0191 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 244
+0192 900000      R     MOV     DPTR,#midiMsg+01H
+0195 7448              MOV     A,#048H
+0197 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 245
+0198 900000      R     MOV     DPTR,#csButtStates
+019B E0                MOVX    A,@DPTR
+019C FF                MOV     R7,A
+019D EF                MOV     A,R7
+019E 5402              ANL     A,#02H
+01A0 FF                MOV     R7,A
+01A1 7E00              MOV     R6,#00H
+01A3 EF                MOV     A,R7
+01A4 4E                ORL     A,R6
+01A5 6008              JZ      ?C0023
+                                           ; SOURCE LINE # 246
+                                           ; SOURCE LINE # 248
+01A7 900000      R     MOV     DPTR,#midiMsg+02H
+01AA 7464              MOV     A,#064H
+01AC F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 249
+01AD 8005              SJMP    ?C0024
+01AF         ?C0023:
+                                           ; SOURCE LINE # 251
+                                           ; SOURCE LINE # 253
+01AF 900000      R     MOV     DPTR,#midiMsg+02H
+01B2 E4                CLR     A
+01B3 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 254
+01B4         ?C0024:
+                                           ; SOURCE LINE # 256
+01B4 7B01              MOV     R3,#01H
+01B6 7A00        R     MOV     R2,#HIGH midiMsg
+01B8 7900        R     MOV     R1,#LOW midiMsg
+01BA 900000      E     MOV     DPTR,#?_USB_PutUsbMidiIn?BYTE+04H
+01BD E4                CLR     A
+01BE F0                MOVX    @DPTR,A
+01BF 7F03              MOV     R7,#03H
+01C1 120000      E     LCALL   _USB_PutUsbMidiIn
+                                           ; SOURCE LINE # 257
+                                           ; SOURCE LINE # 273
+01C4         ?C0016:
+                                           ; SOURCE LINE # 276
+01C4 900000      R     MOV     DPTR,#usbActivityCounter
+01C7 E0                MOVX    A,@DPTR
+01C8 FF                MOV     R7,A
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 16  
+
+01C9 EF                MOV     A,R7
+01CA C3                CLR     C
+01CB 9402              SUBB    A,#02H
+01CD 5003              JNC     $ + 5H
+01CF 020000      R     LJMP    ?C0004
+                                           ; SOURCE LINE # 277
+                                           ; SOURCE LINE # 278
+01D2 120000      E     LCALL   MIDI1_UART_Sleep
+                                           ; SOURCE LINE # 279
+01D5 120000      E     LCALL   MIDI2_UART_Sleep
+                                           ; SOURCE LINE # 282
+01D8 7F01              MOV     R7,#01H
+01DA 120000      E     LCALL   _?MIDI_PWR_Write
+                                           ; SOURCE LINE # 288
+01DD 120000      E     LCALL   USB_Suspend
+                                           ; SOURCE LINE # 290
+01E0 120000      E     LCALL   CyPmSaveClocks
+                                           ; SOURCE LINE # 296
+01E3 7D40              MOV     R5,#040H
+01E5 7C00              MOV     R4,#00H
+01E7 7F00              MOV     R7,#00H
+01E9 120000      E     LCALL   _CyPmSleep
+                                           ; SOURCE LINE # 298
+01EC 120000      E     LCALL   CyPmRestoreClocks
+                                           ; SOURCE LINE # 300
+01EF 120000      E     LCALL   USB_Resume
+                                           ; SOURCE LINE # 303
+01F2 120000      E     LCALL   USB_MIDI_Init
+                                           ; SOURCE LINE # 306
+01F5 7F00              MOV     R7,#00H
+01F7 120000      E     LCALL   _?MIDI_PWR_Write
+                                           ; SOURCE LINE # 308
+01FA 120000      E     LCALL   MIDI1_UART_Wakeup
+                                           ; SOURCE LINE # 309
+01FD 120000      E     LCALL   MIDI2_UART_Wakeup
+                                           ; SOURCE LINE # 310
+0200 900000      R     MOV     DPTR,#usbActivityCounter
+0203 E4                CLR     A
+0204 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 311
+                                           ; SOURCE LINE # 312
+                                           ; SOURCE LINE # 313
+0205 020000      R     LJMP    ?C0004
+0208 22                RET     
+             ; FUNCTION main (END)
+
+             ; FUNCTION _?USB_callbackLocalMidiEvent (BEGIN)
+                                           ; SOURCE LINE # 323
+0000 90FFFD            MOV     DPTR,#0FFFDH
+0003 120000      E     LCALL   ?C?ADDXBP
+0006 120000      E     LCALL   ?C?PSTXDATA
+0009 90FFFF            MOV     DPTR,#0FFFFH
+000C 120000      E     LCALL   ?C?ADDXBP
+000F EF                MOV     A,R7
+0010 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 326
+0011 900000      E     MOV     DPTR,#USB_MIDI1_InqFlags
+0014 E0                MOVX    A,@DPTR
+0015 FF                MOV     R7,A
+0016 EF                MOV     A,R7
+0017 5401              ANL     A,#01H
+0019 FF                MOV     R7,A
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 17  
+
+001A 7E00              MOV     R6,#00H
+001C EF                MOV     A,R7
+001D 4E                ORL     A,R6
+001E 7062              JNZ     ?C0027
+0020 900000      R     MOV     DPTR,#inqFlagsOld
+0023 E0                MOVX    A,@DPTR
+0024 FF                MOV     R7,A
+0025 EF                MOV     A,R7
+0026 5401              ANL     A,#01H
+0028 FF                MOV     R7,A
+0029 7E00              MOV     R6,#00H
+002B EF                MOV     A,R7
+002C 4E                ORL     A,R6
+002D 6053              JZ      ?C0027
+                                           ; SOURCE LINE # 328
+                                           ; SOURCE LINE # 329
+002F 850083      E     MOV     DPH,?C_XBP
+0032 850082      E     MOV     DPL,?C_XBP+01H
+0035 A3                INC     DPTR
+0036 120000      E     LCALL   ?C?PLDXDATA
+0039 120000      E     LCALL   ?C?CLDPTR
+003C FF                MOV     R7,A
+003D EF                MOV     A,R7
+003E 6409              XRL     A,#09H
+0040 7040              JNZ     ?C0027
+                                           ; SOURCE LINE # 330
+                                           ; SOURCE LINE # 331
+0042 850083      E     MOV     DPH,?C_XBP
+0045 850082      E     MOV     DPL,?C_XBP+01H
+0048 A3                INC     DPTR
+0049 120000      E     LCALL   ?C?PLDXDATA
+004C E9                MOV     A,R1
+004D 2401              ADD     A,#01H
+004F F9                MOV     R1,A
+0050 EA                MOV     A,R2
+0051 3400              ADDC    A,#00H
+0053 FA                MOV     R2,A
+0054 120000      E     LCALL   ?C?CLDPTR
+0057 FF                MOV     R7,A
+0058 EF                MOV     A,R7
+0059 B40107            CJNE    A,#01H,?C0029
+                                           ; SOURCE LINE # 332
+                                           ; SOURCE LINE # 333
+005C 7F00              MOV     R7,#00H
+005E 120000      E     LCALL   _?MIDI_PWR_Write
+                                           ; SOURCE LINE # 334
+0061 801F              SJMP    ?C0027
+0063         ?C0029:
+                                           ; SOURCE LINE # 335
+0063 850083      E     MOV     DPH,?C_XBP
+0066 850082      E     MOV     DPL,?C_XBP+01H
+0069 A3                INC     DPTR
+006A 120000      E     LCALL   ?C?PLDXDATA
+006D E9                MOV     A,R1
+006E 2401              ADD     A,#01H
+0070 F9                MOV     R1,A
+0071 EA                MOV     A,R2
+0072 3400              ADDC    A,#00H
+0074 FA                MOV     R2,A
+0075 120000      E     LCALL   ?C?CLDPTR
+0078 FF                MOV     R7,A
+0079 EF                MOV     A,R7
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 18  
+
+007A B40205            CJNE    A,#02H,?C0027
+                                           ; SOURCE LINE # 336
+                                           ; SOURCE LINE # 337
+007D 7F01              MOV     R7,#01H
+007F 120000      E     LCALL   _?MIDI_PWR_Write
+                                           ; SOURCE LINE # 338
+                                           ; SOURCE LINE # 339
+                                           ; SOURCE LINE # 340
+0082         ?C0027:
+                                           ; SOURCE LINE # 341
+0082 900000      E     MOV     DPTR,#USB_MIDI1_InqFlags
+0085 E0                MOVX    A,@DPTR
+0086 FF                MOV     R7,A
+0087 900000      R     MOV     DPTR,#inqFlagsOld
+008A EF                MOV     A,R7
+008B F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 342
+008C 850083      E     MOV     DPH,?C_XBP
+008F 850082      E     MOV     DPL,?C_XBP+01H
+0092 E0                MOVX    A,@DPTR
+0093 FF                MOV     R7,A
+0094 850083      E     MOV     DPH,?C_XBP
+0097 850082      E     MOV     DPL,?C_XBP+01H
+009A EF                MOV     A,R7
+009B F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 343
+009C 900004            MOV     DPTR,#04H
+009F 120000      E     LCALL   ?C?ADDXBP
+00A2 22                RET     
+             ; FUNCTION _?USB_callbackLocalMidiEvent (END)
+
+             ; FUNCTION USB_MIDI1_ProcessUsbOut_EntryCallback (BEGIN)
+                                           ; SOURCE LINE # 354
+                                           ; SOURCE LINE # 355
+                                           ; SOURCE LINE # 356
+0000 7F01              MOV     R7,#01H
+0002 120000      E     LCALL   _?LED_OutA_Write
+                                           ; SOURCE LINE # 357
+0005 22                RET     
+             ; FUNCTION USB_MIDI1_ProcessUsbOut_EntryCallback (END)
+
+             ; FUNCTION USB_MIDI1_ProcessUsbOut_ExitCallback (BEGIN)
+                                           ; SOURCE LINE # 367
+                                           ; SOURCE LINE # 368
+                                           ; SOURCE LINE # 369
+0000 7F00              MOV     R7,#00H
+0002 120000      E     LCALL   _?LED_OutA_Write
+                                           ; SOURCE LINE # 370
+0005 22                RET     
+             ; FUNCTION USB_MIDI1_ProcessUsbOut_ExitCallback (END)
+
+             ; FUNCTION USB_MIDI2_ProcessUsbOut_EntryCallback (BEGIN)
+                                           ; SOURCE LINE # 381
+                                           ; SOURCE LINE # 382
+                                           ; SOURCE LINE # 383
+0000 7F01              MOV     R7,#01H
+0002 120000      E     LCALL   _?LED_OutB_Write
+                                           ; SOURCE LINE # 384
+0005 22                RET     
+             ; FUNCTION USB_MIDI2_ProcessUsbOut_EntryCallback (END)
+
+             ; FUNCTION USB_MIDI2_ProcessUsbOut_ExitCallback (BEGIN)
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 19  
+
+                                           ; SOURCE LINE # 394
+                                           ; SOURCE LINE # 395
+                                           ; SOURCE LINE # 396
+0000 7F00              MOV     R7,#00H
+0002 120000      E     LCALL   _?LED_OutB_Write
+                                           ; SOURCE LINE # 397
+0005 22                RET     
+             ; FUNCTION USB_MIDI2_ProcessUsbOut_ExitCallback (END)
+
+             ; FUNCTION MIDI1_UART_RXISR_EntryCallback (BEGIN)
+                                           ; SOURCE LINE # 408
+                                           ; SOURCE LINE # 409
+                                           ; SOURCE LINE # 411
+0000 7F01              MOV     R7,#01H
+0002 120000      E     LCALL   _LED_InA_Write
+                                           ; SOURCE LINE # 412
+0005 22                RET     
+             ; FUNCTION MIDI1_UART_RXISR_EntryCallback (END)
+
+             ; FUNCTION MIDI1_UART_RXISR_ExitCallback (BEGIN)
+                                           ; SOURCE LINE # 422
+                                           ; SOURCE LINE # 423
+                                           ; SOURCE LINE # 428
+0000 7F00              MOV     R7,#00H
+0002 120000      E     LCALL   _LED_InA_Write
+                                           ; SOURCE LINE # 429
+0005 22                RET     
+             ; FUNCTION MIDI1_UART_RXISR_ExitCallback (END)
+
+             ; FUNCTION MIDI2_UART_RXISR_EntryCallback (BEGIN)
+                                           ; SOURCE LINE # 440
+                                           ; SOURCE LINE # 441
+                                           ; SOURCE LINE # 443
+0000 7F01              MOV     R7,#01H
+0002 120000      E     LCALL   _LED_InB_Write
+                                           ; SOURCE LINE # 444
+0005 22                RET     
+             ; FUNCTION MIDI2_UART_RXISR_EntryCallback (END)
+
+             ; FUNCTION MIDI2_UART_RXISR_ExitCallback (BEGIN)
+                                           ; SOURCE LINE # 454
+                                           ; SOURCE LINE # 455
+                                           ; SOURCE LINE # 460
+0000 7F00              MOV     R7,#00H
+0002 120000      E     LCALL   _LED_InB_Write
+                                           ; SOURCE LINE # 461
+0005 22                RET     
+             ; FUNCTION MIDI2_UART_RXISR_ExitCallback (END)
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    832    ----
+   CONSTANT SIZE    =     14    ----
+   XDATA SIZE       =      5       4
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+C51 COMPILER V9.51   MAIN                                                                  07/22/2017 09:26:12 PAGE 20  
+
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,7 @@
+C:\Users\214016586\Documents\GitHub\Accoder\Accoder.cydsn\Accoder.cyprj|e0da675e-85cb-48c7-8e7b-c801d23710e4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|431caeeb-69de-437d-be6e-cfe77b27140a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|40575a16-50b1-4148-ae18-de4f42a968a9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|cebd460e-7100-4675-92a5-a66ed56a2e05
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2a55671e-4953-481d-8af7-5d4110a75e40
+C:\Users\214016586\Documents\GitHub\Accoder\Accoder_MIDI.cydsn\Accoder_MIDI.cyprj|28e5784e-0555-4373-b45c-e89fc5296f7c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|3cfefbc9-1fdf-44ca-8eb8-d9b1d6588c91

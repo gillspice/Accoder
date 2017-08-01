@@ -3,11 +3,12 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="Accoder" persistent="Accoder.cywrk" platform="NOT_USED">
-<current_project name=".\Accoder.cydsn\Accoder.cyprj" />
+<current_project name=".\Accoder_MIDI.cydsn\Accoder_MIDI.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
 <v>.\Accoder.cydsn\Accoder.cyprj</v>
+<v>.\Accoder_MIDI.cydsn\Accoder_MIDI.cyprj</v>
 </projects>
 <workspace_id v="b0f81f06-5548-49fe-9225-5b2e267111b9" />
 <WriteAppVersionLastSavedWith v="4.0.0.432" />

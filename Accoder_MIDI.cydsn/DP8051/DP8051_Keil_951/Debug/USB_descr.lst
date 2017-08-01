@@ -1,0 +1,451 @@
+C51 COMPILER V9.51   USB_DESCR                                                             07/22/2017 09:26:20 PAGE 1   
+
+
+C51 COMPILER V9.51, COMPILATION OF MODULE USB_DESCR
+OBJECT MODULE PLACED IN .\DP8051\DP8051_Keil_951\Debug\USB_descr.obj
+COMPILER INVOKED BY: C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\import\keil\pk51\9.51\C51\BIN\c51.exe 
+                    -Generated_Source\PSoC3\USB_descr.c NOIV LARGE MODDP2 OMF2 VB(1) NOIP INCDIR(.,Generated_Source\PSoC3) FF(3) DB WL(2) PR(
+                    -.\DP8051\DP8051_Keil_951\Debug/USB_descr.lst) CD OT(2,SIZE) OJ(.\DP8051\DP8051_Keil_951\Debug\USB_descr.obj)
+
+line level    source
+
+   1          /***************************************************************************//**
+   2          * \file USB_descr.c
+   3          * \version 3.10
+   4          *
+   5          * \brief
+   6          *  This file contains the USB descriptors and storage.
+   7          *
+   8          ********************************************************************************
+   9          * \copyright
+  10          * Copyright 2008-2016, Cypress Semiconductor Corporation.  All rights reserved.
+  11          * You may use this file only in accordance with the license, terms, conditions,
+  12          * disclaimers, and limitations in the end user license agreement accompanying
+  13          * the software package with which this file was provided.
+  14          *******************************************************************************/
+  15          
+  16          #include "USB_pvt.h"
+  17          
+  18          
+  19          /*****************************************************************************
+  20          *  User supplied descriptors.  If you want to specify your own descriptors,
+  21          *  define USER_SUPPLIED_DESCRIPTORS below and add your descriptors.
+  22          *****************************************************************************/
+  23          /* `#START USER_DESCRIPTORS_DECLARATIONS` Place your declaration here */
+  24          
+  25          /* `#END` */
+  26          
+  27          
+  28          /***************************************
+  29          *  USB Customizer Generated Descriptors
+  30          ***************************************/
+  31          
+  32          #if !defined(USER_SUPPLIED_DESCRIPTORS)
+  33          /*********************************************************************
+  34          * Device Descriptors
+  35          *********************************************************************/
+  36          const uint8 CYCODE USB_DEVICE0_DESCR[18u] = {
+  37          /* Descriptor Length                       */ 0x12u,
+  38          /* DescriptorType: DEVICE                  */ 0x01u,
+  39          /* bcdUSB (ver 2.0)                        */ 0x00u, 0x02u,
+  40          /* bDeviceClass                            */ 0x00u,
+  41          /* bDeviceSubClass                         */ 0x00u,
+  42          /* bDeviceProtocol                         */ 0x00u,
+  43          /* bMaxPacketSize0                         */ 0x08u,
+  44          /* idVendor                                */ 0xB4u, 0x04u,
+  45          /* idProduct                               */ 0x32u, 0xD2u,
+  46          /* bcdDevice                               */ 0x00u, 0x00u,
+  47          /* iManufacturer                           */ 0x01u,
+  48          /* iProduct                                */ 0x02u,
+  49          /* iSerialNumber                           */ 0x80u,
+  50          /* bNumConfigurations                      */ 0x01u
+  51          };
+  52          /*********************************************************************
+  53          * Config Descriptor  
+C51 COMPILER V9.51   USB_DESCR                                                             07/22/2017 09:26:20 PAGE 2   
+
+  54          *********************************************************************/
+  55          const uint8 CYCODE USB_DEVICE0_CONFIGURATION0_DESCR[133u] = {
+  56          /*  Config Descriptor Length               */ 0x09u,
+  57          /*  DescriptorType: CONFIG                 */ 0x02u,
+  58          /*  wTotalLength                           */ 0x85u, 0x00u,
+  59          /*  bNumInterfaces                         */ 0x02u,
+  60          /*  bConfigurationValue                    */ 0x01u,
+  61          /*  iConfiguration                         */ 0x02u,
+  62          /*  bmAttributes                           */ 0x80u,
+  63          /*  bMaxPower                              */ 0x32u,
+  64          /*********************************************************************
+  65          * AudioControl Interface Descriptor
+  66          *********************************************************************/
+  67          /*  Interface Descriptor Length            */ 0x09u,
+  68          /*  DescriptorType: INTERFACE              */ 0x04u,
+  69          /*  bInterfaceNumber                       */ 0x00u,
+  70          /*  bAlternateSetting                      */ 0x00u,
+  71          /*  bNumEndpoints                          */ 0x00u,
+  72          /*  bInterfaceClass                        */ 0x01u,
+  73          /*  bInterfaceSubClass                     */ 0x01u,
+  74          /*  bInterfaceProtocol                     */ 0x00u,
+  75          /*  iInterface                             */ 0x06u,
+  76          /*********************************************************************
+  77          * AC Header Descriptor
+  78          *********************************************************************/
+  79          /*  AC Header Descriptor Length            */ 0x09u,
+  80          /*  DescriptorType: AUDIO                  */ 0x24u,
+  81          /*  bDescriptorSubtype                     */ 0x01u,
+  82          /*  bcdADC                                 */ 0x00u, 0x01u,
+  83          /*  wTotalLength                           */ 0x09u, 0x00u,
+  84          /*  bInCollection                          */ 0x01u,
+  85          /*  baInterfaceNr                          */ 0x01u,
+  86          /*********************************************************************
+  87          * MIDIStreaming Interface Descriptor
+  88          *********************************************************************/
+  89          /*  Interface Descriptor Length            */ 0x09u,
+  90          /*  DescriptorType: INTERFACE              */ 0x04u,
+  91          /*  bInterfaceNumber                       */ 0x01u,
+  92          /*  bAlternateSetting                      */ 0x00u,
+  93          /*  bNumEndpoints                          */ 0x02u,
+  94          /*  bInterfaceClass                        */ 0x01u,
+  95          /*  bInterfaceSubClass                     */ 0x03u,
+  96          /*  bInterfaceProtocol                     */ 0x00u,
+  97          /*  iInterface                             */ 0x05u,
+  98          /*********************************************************************
+  99          * MS Header Descriptor
+ 100          *********************************************************************/
+ 101          /*  MS Header Descriptor Length            */ 0x07u,
+ 102          /*  DescriptorType: AUDIO                  */ 0x24u,
+ 103          /*  bDescriptorSubtype                     */ 0x01u,
+ 104          /*  bcdADC                                 */ 0x00u, 0x01u,
+ 105          /*  wTotalLength                           */ 0x43u, 0x00u,
+ 106          /*********************************************************************
+ 107          * MIDI IN Jack Descriptor
+ 108          *********************************************************************/
+ 109          /*  MIDI IN Jack Descriptor Length         */ 0x06u,
+ 110          /*  DescriptorType: AUDIO                  */ 0x24u,
+ 111          /*  bDescriptorSubtype                     */ 0x02u,
+ 112          /*  bJackType                              */ 0x01u,
+ 113          /*  bJackID                                */ 0x01u,
+ 114          /*  iJack                                  */ 0x03u,
+ 115          /*********************************************************************
+C51 COMPILER V9.51   USB_DESCR                                                             07/22/2017 09:26:20 PAGE 3   
+
+ 116          * MIDI IN Jack Descriptor
+ 117          *********************************************************************/
+ 118          /*  MIDI IN Jack Descriptor Length         */ 0x06u,
+ 119          /*  DescriptorType: AUDIO                  */ 0x24u,
+ 120          /*  bDescriptorSubtype                     */ 0x02u,
+ 121          /*  bJackType                              */ 0x02u,
+ 122          /*  bJackID                                */ 0x02u,
+ 123          /*  iJack                                  */ 0x03u,
+ 124          /*********************************************************************
+ 125          * MIDI OUT Jack Descriptor
+ 126          *********************************************************************/
+ 127          /*  MIDI OUT Jack Descriptor Length        */ 0x09u,
+ 128          /*  DescriptorType: AUDIO                  */ 0x24u,
+ 129          /*  bDescriptorSubtype                     */ 0x03u,
+ 130          /*  bJackType                              */ 0x01u,
+ 131          /*  bJackID                                */ 0x03u,
+ 132          /*  bNrInputPins                           */ 0x01u,
+ 133          /*  baSourceID                             */ 0x02u,
+ 134          /*  baSourceID                             */ 0x01u,
+ 135          /*  iJack                                  */ 0x04u,
+ 136          /*********************************************************************
+ 137          * MIDI OUT Jack Descriptor
+ 138          *********************************************************************/
+ 139          /*  MIDI OUT Jack Descriptor Length        */ 0x09u,
+ 140          /*  DescriptorType: AUDIO                  */ 0x24u,
+ 141          /*  bDescriptorSubtype                     */ 0x03u,
+ 142          /*  bJackType                              */ 0x02u,
+ 143          /*  bJackID                                */ 0x04u,
+ 144          /*  bNrInputPins                           */ 0x01u,
+ 145          /*  baSourceID                             */ 0x01u,
+ 146          /*  baSourceID                             */ 0x01u,
+ 147          /*  iJack                                  */ 0x04u,
+ 148          /*********************************************************************
+ 149          * MIDI IN Jack Descriptor
+ 150          *********************************************************************/
+ 151          /*  MIDI IN Jack Descriptor Length         */ 0x06u,
+ 152          /*  DescriptorType: AUDIO                  */ 0x24u,
+ 153          /*  bDescriptorSubtype                     */ 0x02u,
+ 154          /*  bJackType                              */ 0x01u,
+ 155          /*  bJackID                                */ 0x05u,
+ 156          /*  iJack                                  */ 0x07u,
+ 157          /*********************************************************************
+ 158          * MIDI IN Jack Descriptor
+ 159          *********************************************************************/
+ 160          /*  MIDI IN Jack Descriptor Length         */ 0x06u,
+ 161          /*  DescriptorType: AUDIO                  */ 0x24u,
+ 162          /*  bDescriptorSubtype                     */ 0x02u,
+ 163          /*  bJackType                              */ 0x02u,
+ 164          /*  bJackID                                */ 0x06u,
+ 165          /*  iJack                                  */ 0x07u,
+ 166          /*********************************************************************
+ 167          * MIDI OUT Jack Descriptor
+ 168          *********************************************************************/
+ 169          /*  MIDI OUT Jack Descriptor Length        */ 0x09u,
+ 170          /*  DescriptorType: AUDIO                  */ 0x24u,
+ 171          /*  bDescriptorSubtype                     */ 0x03u,
+ 172          /*  bJackType                              */ 0x01u,
+ 173          /*  bJackID                                */ 0x07u,
+ 174          /*  bNrInputPins                           */ 0x01u,
+ 175          /*  baSourceID                             */ 0x06u,
+ 176          /*  baSourceID                             */ 0x01u,
+ 177          /*  iJack                                  */ 0x04u,
+C51 COMPILER V9.51   USB_DESCR                                                             07/22/2017 09:26:20 PAGE 4   
+
+ 178          /*********************************************************************
+ 179          * MIDI OUT Jack Descriptor
+ 180          *********************************************************************/
+ 181          /*  MIDI OUT Jack Descriptor Length        */ 0x09u,
+ 182          /*  DescriptorType: AUDIO                  */ 0x24u,
+ 183          /*  bDescriptorSubtype                     */ 0x03u,
+ 184          /*  bJackType                              */ 0x02u,
+ 185          /*  bJackID                                */ 0x08u,
+ 186          /*  bNrInputPins                           */ 0x01u,
+ 187          /*  baSourceID                             */ 0x05u,
+ 188          /*  baSourceID                             */ 0x01u,
+ 189          /*  iJack                                  */ 0x08u,
+ 190          /*********************************************************************
+ 191          * Endpoint Descriptor
+ 192          *********************************************************************/
+ 193          /*  Endpoint Descriptor Length             */ 0x09u,
+ 194          /*  DescriptorType: ENDPOINT               */ 0x05u,
+ 195          /*  bEndpointAddress                       */ 0x81u,
+ 196          /*  bmAttributes                           */ 0x02u,
+ 197          /*  wMaxPacketSize                         */ 0x20u, 0x00u,
+ 198          /*  bInterval                              */ 0x00u,
+ 199          /*  bRefresh                               */ 0x00u,
+ 200          /*  bSynchAddress                          */ 0x00u,
+ 201          /*********************************************************************
+ 202          * MS Bulk Data Endpoint Descriptor
+ 203          *********************************************************************/
+ 204          /*  Endpoint Descriptor Length             */ 0x06u,
+ 205          /*  DescriptorType: CS_ENDPOINT            */ 0x25u,
+ 206          /*  bDescriptorSubtype                     */ 0x01u,
+ 207          /*  bNumEmbMIDIJack                        */ 0x02u,
+ 208          /*  baAssocJackID                          */ 0x03u, 0x07u,
+ 209          /*********************************************************************
+ 210          * Endpoint Descriptor
+ 211          *********************************************************************/
+ 212          /*  Endpoint Descriptor Length             */ 0x09u,
+ 213          /*  DescriptorType: ENDPOINT               */ 0x05u,
+ 214          /*  bEndpointAddress                       */ 0x02u,
+ 215          /*  bmAttributes                           */ 0x02u,
+ 216          /*  wMaxPacketSize                         */ 0x20u, 0x00u,
+ 217          /*  bInterval                              */ 0x00u,
+ 218          /*  bRefresh                               */ 0x00u,
+ 219          /*  bSynchAddress                          */ 0x00u,
+ 220          /*********************************************************************
+ 221          * MS Bulk Data Endpoint Descriptor
+ 222          *********************************************************************/
+ 223          /*  Endpoint Descriptor Length             */ 0x06u,
+ 224          /*  DescriptorType: CS_ENDPOINT            */ 0x25u,
+ 225          /*  bDescriptorSubtype                     */ 0x01u,
+ 226          /*  bNumEmbMIDIJack                        */ 0x02u,
+ 227          /*  baAssocJackID                          */ 0x01u, 0x05u
+ 228          };
+ 229          
+ 230          /*********************************************************************
+ 231          * String Descriptor Table
+ 232          *********************************************************************/
+ 233          const uint8 CYCODE USB_STRING_DESCRIPTORS[185u] = {
+ 234          /*********************************************************************
+ 235          * Language ID Descriptor
+ 236          *********************************************************************/
+ 237          /* Descriptor Length                       */ 0x04u,
+ 238          /* DescriptorType: STRING                  */ 0x03u,
+ 239          /* Language Id                             */ 0x09u, 0x04u,
+C51 COMPILER V9.51   USB_DESCR                                                             07/22/2017 09:26:20 PAGE 5   
+
+ 240          /*********************************************************************
+ 241          * String Descriptor: "Cypress"
+ 242          *********************************************************************/
+ 243          /* Descriptor Length                       */ 0x10u,
+ 244          /* DescriptorType: STRING                  */ 0x03u,
+ 245           (uint8)'C', 0u,(uint8)'y', 0u,(uint8)'p', 0u,(uint8)'r', 0u,(uint8)'e', 0u,
+ 246           (uint8)'s', 0u,(uint8)'s', 0u,
+ 247          /*********************************************************************
+ 248          * String Descriptor: "USB MIDI"
+ 249          *********************************************************************/
+ 250          /* Descriptor Length                       */ 0x12u,
+ 251          /* DescriptorType: STRING                  */ 0x03u,
+ 252           (uint8)'U', 0u,(uint8)'S', 0u,(uint8)'B', 0u,(uint8)' ', 0u,(uint8)'M', 0u,
+ 253           (uint8)'I', 0u,(uint8)'D', 0u,(uint8)'I', 0u,
+ 254          /*********************************************************************
+ 255          * String Descriptor: "MIDI IN"
+ 256          *********************************************************************/
+ 257          /* Descriptor Length                       */ 0x10u,
+ 258          /* DescriptorType: STRING                  */ 0x03u,
+ 259           (uint8)'M', 0u,(uint8)'I', 0u,(uint8)'D', 0u,(uint8)'I', 0u,(uint8)' ', 0u,
+ 260           (uint8)'I', 0u,(uint8)'N', 0u,
+ 261          /*********************************************************************
+ 262          * String Descriptor: "MIDI OUT"
+ 263          *********************************************************************/
+ 264          /* Descriptor Length                       */ 0x12u,
+ 265          /* DescriptorType: STRING                  */ 0x03u,
+ 266           (uint8)'M', 0u,(uint8)'I', 0u,(uint8)'D', 0u,(uint8)'I', 0u,(uint8)' ', 0u,
+ 267           (uint8)'O', 0u,(uint8)'U', 0u,(uint8)'T', 0u,
+ 268          /*********************************************************************
+ 269          * String Descriptor: "MIDI Streaming Intf"
+ 270          *********************************************************************/
+ 271          /* Descriptor Length                       */ 0x28u,
+ 272          /* DescriptorType: STRING                  */ 0x03u,
+ 273           (uint8)'M', 0u,(uint8)'I', 0u,(uint8)'D', 0u,(uint8)'I', 0u,(uint8)' ', 0u,
+ 274           (uint8)'S', 0u,(uint8)'t', 0u,(uint8)'r', 0u,(uint8)'e', 0u,(uint8)'a', 0u,
+ 275           (uint8)'m', 0u,(uint8)'i', 0u,(uint8)'n', 0u,(uint8)'g', 0u,(uint8)' ', 0u,
+ 276           (uint8)'I', 0u,(uint8)'n', 0u,(uint8)'t', 0u,(uint8)'f', 0u,
+ 277          /*********************************************************************
+ 278          * String Descriptor: "MIDI Interface"
+ 279          *********************************************************************/
+ 280          /* Descriptor Length                       */ 0x1Eu,
+ 281          /* DescriptorType: STRING                  */ 0x03u,
+ 282           (uint8)'M', 0u,(uint8)'I', 0u,(uint8)'D', 0u,(uint8)'I', 0u,(uint8)' ', 0u,
+ 283           (uint8)'I', 0u,(uint8)'n', 0u,(uint8)'t', 0u,(uint8)'e', 0u,(uint8)'r', 0u,
+ 284           (uint8)'f', 0u,(uint8)'a', 0u,(uint8)'c', 0u,(uint8)'e', 0u,
+ 285          /*********************************************************************
+ 286          * String Descriptor: "MIDI IN 2"
+ 287          *********************************************************************/
+ 288          /* Descriptor Length                       */ 0x14u,
+ 289          /* DescriptorType: STRING                  */ 0x03u,
+ 290           (uint8)'M', 0u,(uint8)'I', 0u,(uint8)'D', 0u,(uint8)'I', 0u,(uint8)' ', 0u,
+ 291           (uint8)'I', 0u,(uint8)'N', 0u,(uint8)' ', 0u,(uint8)'2', 0u,
+ 292          /*********************************************************************
+ 293          * String Descriptor: "MIDI OUT 2"
+ 294          *********************************************************************/
+ 295          /* Descriptor Length                       */ 0x16u,
+ 296          /* DescriptorType: STRING                  */ 0x03u,
+ 297           (uint8)'M', 0u,(uint8)'I', 0u,(uint8)'D', 0u,(uint8)'I', 0u,(uint8)' ', 0u,
+ 298           (uint8)'O', 0u,(uint8)'U', 0u,(uint8)'T', 0u,(uint8)' ', 0u,(uint8)'2', 0u,
+ 299          /*********************************************************************/
+ 300          /* Marks the end of the list.              */ 0x00u};
+ 301          /*********************************************************************/
+C51 COMPILER V9.51   USB_DESCR                                                             07/22/2017 09:26:20 PAGE 6   
+
+ 302          
+ 303          /*********************************************************************
+ 304          * Serial Number String Descriptor
+ 305          *********************************************************************/
+ 306          const uint8 CYCODE USB_SN_STRING_DESCRIPTOR[2] = {
+ 307          /* Descriptor Length                       */ 0x02u,
+ 308          /* DescriptorType: STRING                  */ 0x03u
+ 309          };
+ 310          
+ 311          
+ 312          
+ 313          /*********************************************************************
+ 314          * Endpoint Setting Table -- This table contain the endpoint setting
+ 315          *                           for each endpoint in the configuration. It
+ 316          *                           contains the necessary information to
+ 317          *                           configure the endpoint hardware for each
+ 318          *                           interface and alternate setting.
+ 319          *********************************************************************/
+ 320          const T_USB_EP_SETTINGS_BLOCK CYCODE USB_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE[2u] = {
+ 321          /* IFC  ALT    EPAddr bmAttr MaxPktSize Class ********************/
+ 322          {0x01u, 0x00u, 0x81u, 0x02u, 0x0020u,   0x01u},
+ 323          {0x01u, 0x00u, 0x02u, 0x02u, 0x0020u,   0x01u}
+ 324          };
+ 325          const uint8 CYCODE USB_DEVICE0_CONFIGURATION0_INTERFACE_CLASS[2u] = {
+ 326          0x01u, 0x01u
+ 327          };
+ 328          /*********************************************************************
+ 329          * Config Dispatch Table -- Points to the Config Descriptor and each of
+ 330          *                          and endpoint setup table and to each
+ 331          *                          interface table if it specifies a USB Class
+ 332          *********************************************************************/
+ 333          const T_USB_LUT CYCODE USB_DEVICE0_CONFIGURATION0_TABLE[5u] = {
+ 334              {0x01u,     &USB_DEVICE0_CONFIGURATION0_DESCR},
+ 335              {0x02u,     &USB_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE},
+ 336              {0x00u,    NULL},
+ 337              {0x00u,    NULL},
+ 338              {0x00u,     &USB_DEVICE0_CONFIGURATION0_INTERFACE_CLASS}
+ 339          };
+ 340          /*********************************************************************
+ 341          * Device Dispatch Table -- Points to the Device Descriptor and each of
+ 342          *                          and Configuration Tables for this Device 
+ 343          *********************************************************************/
+ 344          const T_USB_LUT CYCODE USB_DEVICE0_TABLE[3u] = {
+ 345              {0x01u,     &USB_DEVICE0_DESCR},
+ 346              {0x00u,    NULL},
+ 347              {0x01u,     &USB_DEVICE0_CONFIGURATION0_TABLE}
+ 348          };
+ 349          /*********************************************************************
+ 350          * Device Table -- Indexed by the device number.
+ 351          *********************************************************************/
+ 352          const T_USB_LUT CYCODE USB_TABLE[1u] = {
+ 353              {0x01u,     &USB_DEVICE0_TABLE}
+ 354          };
+ 355          
+ 356          #endif /* USER_SUPPLIED_DESCRIPTORS */
+ 357          
+ 358          #if defined(USB_ENABLE_MSOS_STRING)
+ 359          
+ 360              /******************************************************************************
+ 361              *  USB Microsoft OS String Descriptor
+ 362              *  "MSFT" identifies a Microsoft host
+ 363              *  "100" specifies version 1.00
+C51 COMPILER V9.51   USB_DESCR                                                             07/22/2017 09:26:20 PAGE 7   
+
+ 364              *  USB_GET_EXTENDED_CONFIG_DESCRIPTOR becomes the bRequest value
+ 365              *  in a host vendor device/class request
+ 366              ******************************************************************************/
+ 367          
+ 368              const uint8 CYCODE USB_MSOS_DESCRIPTOR[USB_MSOS_DESCRIPTOR_LENGTH] = {
+ 369              /* Descriptor Length                       */   0x12u,
+ 370              /* DescriptorType: STRING                  */   0x03u,
+ 371              /* qwSignature - "MSFT100"                 */   (uint8)'M', 0u, (uint8)'S', 0u, (uint8)'F', 0u, (uint8
+             -)'T', 0u,
+ 372                                                              (uint8)'1', 0u, (uint8)'0', 0u, (uint8)'0', 0u,
+ 373              /* bMS_VendorCode:                         */   USB_GET_EXTENDED_CONFIG_DESCRIPTOR,
+ 374              /* bPad                                    */   0x00u
+ 375              };
+ 376          
+ 377              /* Extended Configuration Descriptor */
+ 378          
+ 379              const uint8 CYCODE USB_MSOS_CONFIGURATION_DESCR[USB_MSOS_CONF_DESCR_LENGTH] = {
+ 380              /*  Length of the descriptor 4 bytes       */   0x28u, 0x00u, 0x00u, 0x00u,
+ 381              /*  Version of the descriptor 2 bytes      */   0x00u, 0x01u,
+ 382              /*  wIndex - Fixed:INDEX_CONFIG_DESCRIPTOR */   0x04u, 0x00u,
+ 383              /*  bCount - Count of device functions.    */   0x01u,
+ 384              /*  Reserved : 7 bytes                     */   0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u,
+ 385              /*  bFirstInterfaceNumber                  */   0x00u,
+ 386              /*  Reserved                               */   0x01u,
+ 387              /*  compatibleID    - "CYUSB\0\0"          */   (uint8)'C', (uint8)'Y', (uint8)'U', (uint8)'S', (uint8
+             -)'B',
+ 388                                                              0x00u, 0x00u, 0x00u,
+ 389              /*  subcompatibleID - "00001\0\0"          */   (uint8)'0', (uint8)'0', (uint8)'0', (uint8)'0', (uint8
+             -)'1',
+ 390                                                              0x00u, 0x00u, 0x00u,
+ 391              /*  Reserved : 6 bytes                     */   0x00u, 0x00u, 0x00u, 0x00u, 0x00u, 0x00u
+ 392              };
+ 393          
+ 394          #endif /* USB_ENABLE_MSOS_STRING */
+ 395          
+ 396          /* DIE ID string descriptor for 8 bytes ID */
+ 397          #if defined(USB_ENABLE_IDSN_STRING)
+ 398              uint8 USB_idSerialNumberStringDescriptor[USB_IDSN_DESCR_LENGTH];
+ 399          #endif /* USB_ENABLE_IDSN_STRING */
+ 400          
+ 401          
+ 402          /* [] END OF FILE */
+C51 COMPILER V9.51   USB_DESCR                                                             07/22/2017 09:26:20 PAGE 8   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   ----    ----
+   CONSTANT SIZE    =    448    ----
+   XDATA SIZE       =     34    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

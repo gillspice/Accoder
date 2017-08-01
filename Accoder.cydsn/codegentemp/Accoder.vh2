@@ -2,7 +2,7 @@
 --	Conversion of Accoder.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Jul 21 11:30:29 2017
+--	Fri Jul 21 17:51:05 2017
 --
 
 USE cypress.cypress.all;
@@ -242,8 +242,8 @@ SIGNAL matrix_reg_12 : bit;
 SIGNAL matrix_reg_13 : bit;
 SIGNAL matrix_reg_14 : bit;
 SIGNAL matrix_reg_15 : bit;
-SIGNAL Net_306 : bit;
-ATTRIBUTE soft of Net_306:SIGNAL IS '1';
+SIGNAL Net_333 : bit;
+ATTRIBUTE soft of Net_333:SIGNAL IS '1';
 SIGNAL \Control_Reg_2:clk\ : bit;
 SIGNAL \Control_Reg_2:rst\ : bit;
 SIGNAL Reg1_15 : bit;
@@ -460,9 +460,9 @@ SIGNAL \Control_Reg_4:control_3\ : bit;
 SIGNAL \Control_Reg_4:control_2\ : bit;
 SIGNAL \Control_Reg_4:control_1\ : bit;
 SIGNAL \Control_Reg_4:control_0\ : bit;
-SIGNAL Net_309 : bit;
+SIGNAL Net_342 : bit;
 SIGNAL tmpOE__DATA_net_0 : bit;
-SIGNAL Net_305 : bit;
+SIGNAL Net_332 : bit;
 SIGNAL tmpFB_0__DATA_net_0 : bit;
 SIGNAL tmpIO_0__DATA_net_0 : bit;
 TERMINAL tmpSIOVREF__DATA_net_0 : bit;
@@ -470,12 +470,13 @@ SIGNAL zero : bit;
 SIGNAL one : bit;
 SIGNAL tmpINTERRUPT_0__DATA_net_0 : bit;
 SIGNAL tmpOE__CLK_net_0 : bit;
-SIGNAL Net_153 : bit;
+SIGNAL Net_341 : bit;
 SIGNAL tmpFB_0__CLK_net_0 : bit;
 SIGNAL tmpIO_0__CLK_net_0 : bit;
 TERMINAL tmpSIOVREF__CLK_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__CLK_net_0 : bit;
 SIGNAL tmpOE__TE_net_0 : bit;
+SIGNAL Net_344 : bit;
 SIGNAL tmpFB_0__TE_net_0 : bit;
 SIGNAL tmpIO_0__TE_net_0 : bit;
 TERMINAL tmpSIOVREF__TE_net_0 : bit;
@@ -1094,6 +1095,7 @@ SIGNAL \USBMIDI_1:dma_complete_6\ : bit;
 SIGNAL \USBMIDI_1:Net_1916\ : bit;
 SIGNAL \USBMIDI_1:dma_complete_7\ : bit;
 SIGNAL \USBMIDI_1:Net_1915\ : bit;
+SIGNAL Net_347 : bit;
 SIGNAL count_6D : bit;
 SIGNAL count_5D : bit;
 SIGNAL count_4D : bit;
@@ -1167,7 +1169,7 @@ count_1D <= ((not count_0 and count_1)
 
 count_0D <= (not count_0);
 
-Net_306 <= ((not count_6 and not count_5 and not count_4 and not count_3 and count_2 and count_1 and count_0 and Reg8_0)
+Net_333 <= ((not count_6 and not count_5 and not count_4 and not count_3 and count_2 and count_1 and count_0 and Reg8_0)
 	OR (not count_6 and not count_5 and not count_4 and not count_3 and not count_0 and count_2 and count_1 and Reg7_0)
 	OR (not count_6 and not count_5 and not count_4 and not count_3 and not count_1 and count_2 and count_0 and Reg6_0)
 	OR (not count_6 and not count_5 and not count_4 and not count_3 and not count_1 and not count_0 and count_2 and Reg5_0)
@@ -1401,9 +1403,7 @@ Net_38 <=  ('1') ;
 
 \MIDI1_UART:BUART:rx_address_detected\\D\ <= ((not \MIDI1_UART:BUART:reset_reg\ and \MIDI1_UART:BUART:rx_address_detected\));
 
-Net_305 <= (not Net_306);
-
-Net_153 <= (not count_0
+Net_341 <= (not count_0
 	OR not count_1
 	OR not count_2
 	OR not count_3
@@ -1411,6 +1411,8 @@ Net_153 <= (not count_0
 	OR not count_5
 	OR not count_6
 	OR not Net_41);
+
+Net_332 <= (not Net_333);
 
 \BasicCounter_1:MODULE_1:g2:a0:g1:z1:s0:g1:u0:gs(24):g2:g3:ub\:cy_buf
 	PORT MAP(x=>Net_40,
@@ -1432,7 +1434,7 @@ SCLK:cy_clock_v1_0
 	PORT MAP(clock_out=>Net_41,
 		dig_domain_out=>open);
 \Control_Reg_2:Sync:ctrl_reg\:cy_psoc3_control
-	GENERIC MAP(cy_init_value=>"00100000",
+	GENERIC MAP(cy_init_value=>"00000000",
 		cy_force_order=>'1',
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
@@ -1442,7 +1444,7 @@ SCLK:cy_clock_v1_0
 		control=>(Reg1_15, Reg1_14, Reg1_13, Reg1_12,
 			Reg1_11, Reg1_10, Reg1_9, Reg1_8));
 \Control_Reg_1:Sync:ctrl_reg\:cy_psoc3_control
-	GENERIC MAP(cy_init_value=>"00001000",
+	GENERIC MAP(cy_init_value=>"00000000",
 		cy_force_order=>'1',
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
@@ -1528,7 +1530,7 @@ DATA:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(Net_38),
-		y=>Net_305,
+		y=>Net_332,
 		fb=>(tmpFB_0__DATA_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__DATA_net_0),
@@ -1598,7 +1600,7 @@ CLK:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(Net_38),
-		y=>Net_153,
+		y=>Net_341,
 		fb=>(tmpFB_0__CLK_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__CLK_net_0),
@@ -1692,7 +1694,7 @@ TE:cy_psoc3_pins_v1_10
 		control=>(Reg3_7, Reg3_6, Reg3_5, Reg3_4,
 			Reg3_3, Reg3_2, Reg3_1, Reg3_0));
 \Control_Reg_6:Sync:ctrl_reg\:cy_psoc3_control
-	GENERIC MAP(cy_init_value=>"01000000",
+	GENERIC MAP(cy_init_value=>"00000000",
 		cy_force_order=>'1',
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
@@ -1712,7 +1714,7 @@ TE:cy_psoc3_pins_v1_10
 		control=>(Reg4_7, Reg4_6, Reg4_5, Reg4_4,
 			Reg4_3, Reg4_2, Reg4_1, Reg4_0));
 \Control_Reg_8:Sync:ctrl_reg\:cy_psoc3_control
-	GENERIC MAP(cy_init_value=>"01000000",
+	GENERIC MAP(cy_init_value=>"00000000",
 		cy_force_order=>'1',
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
@@ -1732,7 +1734,7 @@ TE:cy_psoc3_pins_v1_10
 		control=>(Reg5_7, Reg5_6, Reg5_5, Reg5_4,
 			Reg5_3, Reg5_2, Reg5_1, Reg5_0));
 \Control_Reg_10:Sync:ctrl_reg\:cy_psoc3_control
-	GENERIC MAP(cy_init_value=>"01000000",
+	GENERIC MAP(cy_init_value=>"00000000",
 		cy_force_order=>'1',
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
